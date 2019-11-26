@@ -1,0 +1,62 @@
+#glossaire {
+    position: absolute;
+    right: 0;
+    top: 535px;
+    width: 22%;
+    height: 100%;
+    color: #000000;
+    text-align: left;
+    font-size: 0.88rem;
+    font-family:'Sometype Mono';
+    font-style: normal;
+    background-color: #ffffff;
+    border-left: 1px solid; /* граница будущего градента */
+    /*border-radius: 3px;*/
+}
+
+#glossaire-content {
+
+    overflow: auto;
+    height: 95%;
+}
+
+#glossaire-content:visited {
+    color: #ffffff;
+}
+#glossaire:hover {
+    color: #ffffff;
+    background-color: #0000ff;
+    border: 1px solid; /* граница будущего градента */
+    border-radius: 3px;
+    border-color: black;
+}
+
+.glossaire-header {
+    font-size: 1.5em;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: 'hk_groteskbold';
+
+
+}
+
+
+.def-header {
+    font-family: 'hk_groteskbold';
+}
+
+
+
+.def-content {
+    margin: 15px 20px;
+}
+
+#glossaire-content::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right:0;
+}

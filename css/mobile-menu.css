@@ -1,0 +1,15 @@
+#burger-menu {
+    z-index: 100500000;
+    display: block!important;
+    position: fixed;
+    top:0;
+    right:0;
+
+    height: 20px;
+    width: 20px;
+}
+
+#burger-menu > img {
+    height: 100%;
+    width: 100%;
+}

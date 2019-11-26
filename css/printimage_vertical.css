@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Sometype Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/SometypeMono-Bold.woff2') format('woff2'),
+    url('../fonts/SometypeMono-Bold.woff') format('woff'),
+    url('../fonts/SometypeMono-Bold.ttf') format('truetype'),
+    url('../fonts/SometypeMono-Bold.otf') format('opentype'),
+    url('../fonts/SometypeMono-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Sometype Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/SometypeMono-Regular.woff2') format('woff2'),
+    url('../fonts/SometypeMono-Regular.woff') format('woff'),
+    url('../fonts/SometypeMono-Regular.ttf') format('truetype'),
+    url('../fonts/SometypeMono-Regular.otf') format('opentype'),
+    url('../fonts/SometypeMono-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Sometype Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/SometypeMono-Medium.woff2') format('woff2'),
+    url('../fonts/SometypeMono-Medium.woff') format('woff'),
+    url('../fonts/SometypeMono-Medium.ttf') format('truetype'),
+    url('../fonts/SometypeMono-Medium.otf') format('opentype'),
+    url('../fonts/SometypeMono-Medium.eot') format('embedded-opentype');
+}
+
+
+
+img {
+    filter: hue-rotate(100deg);
+}
+
+
+img {
+    mix-blend-mode: screen;
+    -webkit-filter: grayscale(100%) contrast(200%);
+    filter: grayscale(100%) contrast(100%);
+    opacity: 1;
+}
+
+img {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+@media print {
+    @page {
+        width: 210mm;
+        height: 297mm;
+
+    }
+
+    body {
+        margin: 0;
+
+    }
+
+
+    figure {
+        page-break-after: always;
+    }
+
+    figcaption {
+        font-family: 'Sometype Mono';
+        font-size: 0.9rem;
+        transform: rotate(0deg);!important;
+        margin-left: 50mm; !important;
+        margin-top: 20mm; !important;
+        font-weight: lighter;
+        width: 5cm;
+        text-align: center;
+
+
+    }
+
+
+    img {
+        max-height: 240mm;
+        height: auto;
+        margin-left: 0mm;
+        margin-bottom: 0;
+
+
+    }
+
+    img {
+        filter: hue-rotate(100deg);
+    }
+
+
+    img {
+        mix-blend-mode: screen;
+        -webkit-filter: grayscale(100%) contrast(200%);
+        filter: grayscale(100%) contrast(100%);
+        opacity: 1;
+    }
+
+    figure:last-child {
+        padding-bottom: 10cm;
+    }
+
+    /**
+          figure {
+              page-break-after: always;
+              position: center;
+     }
+
+    /**
+
+          body figure:nth-child(odd) {
+              position: relative;
+
+          }
+
+          body figure:nth-child(even) {
+               page-break-after: always;
+              position: relative;
+
+          }
+      */
+}

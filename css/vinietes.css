@@ -1,0 +1,64 @@
+.viniete {
+    float: left;
+    clear: left;
+    margin-left: -33%;
+    width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    position: relative;
+    text-align: left;
+    color: #000000;
+    font-style: normal;
+    font-size: 0.7rem;
+    text-indent: 0; !important;
+    font-family:'Sometype Mono';
+    display: none;
+}
+.viniete {
+    color: #000000;
+
+
+}
+
+
+
+.viniete {
+    filter: hue-rotate(240deg);
+    color: #000000;
+}
+
+
+
+
+.viniete {
+    mix-blend-mode: screen;
+    -webkit-filter: grayscale(100%) contrast(200%);
+    filter: grayscale(100%) contrast(100%);
+    opacity: 1;
+}
+
+
+
+
+.vinietefigcaption {
+    float: left;
+    clear: left;
+    margin-left: -33%;
+    width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    position: relative;
+    text-align: left;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-indent: 0; !important;
+    font-family:'Sometype Mono';
+    display: none;
+}
+
+

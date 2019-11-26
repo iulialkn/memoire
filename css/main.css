@@ -1,0 +1,977 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+.titre {
+    font-family: 'hk_groteskregular';
+    font-size: 5rem;
+    padding-bottom: 280px;
+
+    line-height: 70px;
+    left: 18%;
+}
+
+
+.cover {
+    font-size: 1rem;
+    margin-left: 5px;
+    font-family: 'Sometype Mono';
+    color: #000000;
+    margin-top: -200px;
+    width: 100%;
+
+}
+
+.direction {
+    font-size: 1rem;
+    margin-left: 5px;
+    font-family: 'Sometype Mono';
+    color: #000000;
+    width: 100%;
+
+
+}
+
+p {
+    margin: 5px 0;
+    text-indent: 2rem;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 25px;
+    font-family: 'hk_groteskmedium';
+
+}
+
+h4 + p, h5 + p {
+    text-indent: 0 rnem;
+}
+
+
+/* titre */
+
+
+.memoire {
+    font-size: 4rem;
+    width: 50%;
+    margin-left: 30%;
+}
+
+.bibliographie {
+    font-size: 1rem;
+    font-family: 'Sometype Mono';
+    color: #000000;
+    text-indent: 0;
+!important;
+    margin-top: 15px;
+    line-height: 17px;
+}
+
+.numb {
+    font-size: 0.8rem;
+    font-family: 'Sometype Mono';
+}
+
+h1 {
+    font-family: 'hk_groteskbold';
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #000000;
+}
+
+h4, h5 {
+    font-family: 'hk_groteskbold';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+
+.h4-impression {
+    display: none;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.source {
+    font-size: 0.8em;
+    text-decoration: underline !important;
+    color: inherit !important;
+}
+
+#text {
+    width: 48%;
+    margin-left: 29%;
+
+}
+
+
+.citation {
+    font-family: 'Sometype Mono';
+
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 21px;
+    font-size: 1.1rem;
+    text-indent: 0;
+    color: #000000;
+!important;
+}
+
+.abstract {
+    display: none;
+}
+
+/* Table of content */
+ul {
+    margin-top: 0px;
+
+}
+
+li {
+    width: 50%;
+    line-height: 15px;
+    text-align: left;
+}
+
+#toc {
+    font-family: 'Sometype Mono';
+
+
+}
+
+ul, li {
+    list-style: none;
+}
+
+li {
+    padding-left: 0;
+
+}
+
+a:visited {
+    color: black;
+
+}
+
+code {
+    word-wrap: normal;
+}
+
+.truc {
+    height: 260px;
+}
+
+.table-of-content .truc {
+    display: none;
+}
+
+.table-of-content {
+    z-index: 1000;
+    width: 25%;
+    vertical-align: top;
+    padding-right: -50px;
+    position: absolute;
+    top: 535px;
+    left: 5px;
+    font-size: 0.7rem;
+}
+
+.table-of-content li a {
+    display: inline-block;
+    padding: 2px 5px;
+    color: #000000;
+
+}
+
+.table-of-content li a:hover {
+    padding: 2px 10px;
+    color: #0007ff;
+
+    font-style: italic;
+}
+
+.type-H1 {
+}
+
+.type-H2,
+.type-H3,
+.type-H4,
+.type-H5 {
+    margin-left: 30px;
+}
+
+
+/* animation */
+
+.clickable,
+.footnote,
+.link,
+.table-of-content li a {
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+
+/* footnote */
+
+
+.link {
+    padding: 0 3px;
+    color: rgb(0, 0, 255);
+    user-select: none;
+    font-size: 0.7rem;
+    /*background-color: #000000;*/
+    background-color: #ffffff;
+    font-weight: bold;
+    font-family: 'Sometype Mono';
+    font-weight: bold;
+}
+
+a.link {
+    text-decoration: none;
+    color: black;
+
+}
+
+.link::before {
+    content: "[";
+    color: inherit;
+}
+
+.link::after {
+    content: "]";
+    color: inherit;
+}
+
+
+.fig {
+    color: rgb(0, 0, 255);
+    user-select: none;
+    font-family: 'Sometype Mono';
+    font-size: 0.7rem;
+    font-weight: bold;
+
+}
+
+.intro {
+    font-family: 'Sometype Mono';
+}
+
+/*
+.link:hover {
+    cursor: pointer;
+}*/
+
+.clickable {
+    /*border-bottom: 3px dashed rgb(49,255,0);*/
+    color: rgb(12, 0, 255);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Sometype Mono';
+    font-weight: normal;
+
+
+}
+
+.link:hover,
+.clickable:hover {
+    /*padding: 0 5px;*/
+    cursor: pointer;
+    background-color: rgb(0, 7, 255);
+    color: rgb(255, 255, 255);
+    /*font-style: italic;*/
+}
+
+.link.l-sidenote:hover {
+    background-color: rgba(12, 0, 255, 0.8);
+}
+
+.link.l-sidenote:hover::before {
+    content: "[";
+    color: #0c00ff;
+}
+
+.link.l-sidenote:hover::after {
+    content: "]";
+    color: #0c00ff;
+}
+
+
+#definition-text {
+    font-style: italic;
+
+    width: 70%;
+    padding: 15px 0;
+    font-size: 1.3vw;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+
+.note-bas-de-page {
+    display: none;
+    font-size: 1vw;
+}
+
+
+/*.memoire {
+    background: linear-gradient(rgb(255, 255, 255), rgba(252, 252, 255, 0));
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+}
+*/
+/* image et legende */
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.15);
+}
+
+figcaption {
+    width: 100%;
+    font-size: 0.7rem;
+    font-family: 'Sometype Mono';
+
+}
+
+
+.vertical {
+    height: 500px;
+    width: auto;
+
+}
+
+.horizontal {
+    width: 500px;
+    height: auto;
+}
+
+.gallery-content {
+    padding: 25px 0px;
+
+    background-color: black;
+}
+
+/*
+p:before {
+    content: "<p>";
+}
+
+p:after {
+    content: "</p>";
+}
+
+
+
+.clickable {
+    border-bottom: solid 2px #000000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 150px 10px 146px 100%/70px;
+    border-style: dashed;
+    text-decoration-skip: wavy;
+}
+*/
+.sous-titre {
+    display: none;
+}
+
+.vinietefigcaption {
+    display: none;
+}
+
+
+
+
+#container {
+    margin: 0%;
+}
+
+#circle {
+
+    width: 100%;
+    padding-bottom: 0%;
+    overflow: hidden;
+
+
+}
+
+#circle text {
+
+    font-family: 'hk_groteskmedium';
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#circle svg {
+    position: absolute;
+    left: 30%;
+    top: -8%;
+    width: 100%;
+    height: 340px;
+
+
+    -webkit-animation-name: rotate;
+    -moz-animation-name: rotate;
+    -ms-animation-name: rotate;
+    -o-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 7s;
+    -moz-animation-duration: 7s;
+    -ms-animation-duration: 7s;
+    -o-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+}
+
+/*
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+    to {
+        -webkit-transform: rotate(0);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(360deg);
+    }
+    to {
+        -moz-transform: rotate(0);
+    }
+}
+
+@-ms-keyframes rotate {
+    from {
+        -ms-transform: rotate(360deg);
+    }
+    to {
+        -ms-transform: rotate(0);
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(360deg);
+    }
+    to {
+        -o-transform: rotate(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+*/
+
+iframe {
+    display: none;
+}
+
+
+html {
+    background-color: #ffffff !important;
+}
+
+
+/* MODE NUIT SYSTÈME
+@media (prefers-color-scheme: dark) {
+
+    html {
+        filter: invert(1) hue-rotate(.5turn);
+        background-color:  black;
+        color: white;
+    }
+
+    body {
+
+    }
+
+    img {
+        filter: invert(1) hue-rotate(.5turn);
+    }
+
+    img:not(:hover) {
+        opacity: .7;
+        transition: opacity .25s ease-in-out;
+    }
+}
+*/
+/*MODE NUIT BOUTON*/
+
+html.nuit {
+    filter: invert(1) hue-rotate(.5turn);
+}
+
+.nuit img {
+    filter: invert(1) hue-rotate(.5turn);
+}
+
+#nightMode {
+    z-index: 300600;
+    user-select: none;
+}
+
+#nightMode:hover {
+    cursor: pointer;
+}
+
+#titre {
+    background-color: #ffffff;
+    height: 500px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.elements {
+    font-family: hk_groteskbold;
+    font-size: 1rem;
+}
+
+
+.blog-grid a.single-blog {
+    page-break-before: always;
+    display: block;
+    grid-template-columns: 5fr 4fr;
+
+    text-decoration: none;
+}
+
+.blog-grid a.single-blog:hover {
+    cursor: pointer;
+}
+
+
+.blog-grid a.single-blog .blog-info {
+    page-break-before: always;
+    display: block;
+    grid-template-rows: 2fr 4fr 2fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000000;
+    margin-top: 70mm;
+    padding-top: 100mm;
+    margin-left: 70mm;
+    width: 70%;
+
+
+}
+
+.blog-grid a.single-blog .blog-info .quote-box {
+    page-break-before: always;
+    position: relative;
+    display: inline-block;
+    transform: rotate(-3.5deg);
+    -ms-transform: rotate(-3.5deg);
+    -webkit-transform: rotate(-3.5deg);
+    font-size: 1.1rem;
+    font-family: 'hk_groteskregular';
+    text-align: left;
+}
+
+.blog-grid a.single-blog .blog-info .quote-box .quote {
+    font-size: 1.1rem;
+    font-family: 'hk_groteskregular';
+    text-align: left;
+    position: relative;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+*/
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-family: 'hk_groteskregular';
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-top: black;
+    z-index: 300800;
+}
+
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #0000ff;
+}
+
+
+.gallery-content {
+    background: #000000;
+}
+
+img {
+    mix-blend-mode: screen;
+    -webkit-filter: grayscale(100%) contrast(200%);
+    filter: grayscale(100%) contrast(200%);
+    opacity: 1;
+}
+
+.gallery-content:hover {
+
+    background: black;
+
+}
+
+img:hover {
+    mix-blend-mode: normal;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+}
+
+body[data-template="home"] main figure:hover img, body[data-template="gallery"] main figure:hover img {
+    mix-blend-mode: normal;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+}
+
+#text {
+    padding-top: 160px;
+}
+
+.couverture {
+    display: none;!important;
+}
+
+
+@media print {
+    figure {
+
+        display: none;
+    }
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin-left: 10mm;
+
+    }
+
+    @page {
+        size: A4;
+
+    }
+
+    @page :left {
+        margin-top: 15mm;
+        margin-right: 10mm;
+        margin-left: 30mm;
+        margin-bottom: 20mm;
+    }
+
+    @page :right {
+        margin-top: 15mm;
+        margin-right: 10mm;
+        margin-left: 30mm;
+        margin-bottom: 20mm;
+    }
+
+    h1 {
+        left: 0;
+        top: 0mm;
+        text-indent: 0;
+
+        font-size: 1.3rem;
+    !important;
+    }
+
+
+    h1 {
+        display: block;
+        page-break-before: always;
+        color: #000000;
+
+    }
+
+    h1 + .h4-impression {
+
+
+    }
+
+    .sous-titre {
+        color: #000000;
+        font-family: 'Sometype Mono';
+
+        page-break-before: always;
+        text-align: left;
+        font-size: 1.1rem;
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        display: block;
+        text-indent: 0;
+    }
+
+    .h4-impression {
+
+
+    }
+
+    h4, h5 {
+        margin-left: 0;
+        text-indent: 0;
+        text-align: left;
+        padding-top: 0mm;
+        font-size: 1.3rem;
+        color: #000000;
+    }
+
+    h4 + h5 {
+        padding-top: 0;
+    }
+
+
+    p {
+        /*margin: unset;*/
+        padding: unset;
+
+        line-height: 26px;
+        color: #000000;
+    !important;
+        font-size: 1.2rem;
+        font-family: 'hk_groteskbold';
+        text-indent: 0;
+        padding-top: 10px;
+
+    }
+
+    .sous-titre {
+        page-break-before: always;
+    }
+
+    .abstract {
+        font-family: 'Sometype Mono';
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        line-height: 22px;
+        font-size: 1rem;
+        text-indent: 0;
+        font-weight: lighter;
+    !important;
+        width: 120%;
+
+    }
+
+    .viniete, .vinietefigcaption {
+        display: block;
+    }
+
+
+    .memoire {
+        display: none;
+    }
+
+
+    .truc {
+        display: none;
+    }
+
+    .intro {
+        font-family: 'Sometype Mono';
+    !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        line-height: 22px;
+        font-size: 1.1rem;
+        text-indent: 0;
+        font-weight: lighter;
+    !important;
+
+
+    }
+
+    #text {
+        padding: 0;
+        text-indent: 2rem;
+        text-align: left;
+        width: 77%;
+        margin-right: 4cm;
+        color: #000000;
+        font-weight: normal;
+
+    }
+
+
+    body {
+        float: none !important;
+
+    }
+
+    #glossaire {
+        display: none;
+    }
+
+
+    .chifre {
+
+        color: #000000;
+    }
+
+    .clickable {
+        color: #000000;
+
+    }
+
+
+    .table-of-content {
+        display: none;
+    }
+
+    .sidenote {
+        margin-left: -33%;
+        width: 30%;
+        font-size: 0.8rem;
+        font-weight: lighter;
+    !important;
+        line-height: 1;
+    }
+
+    .source {
+        display: none;
+
+    }
+
+    #toc {
+        display: none;
+        width: 150%;
+        page-break-before: always;
+        page-break-after: always;
+        left: 260%;
+        top: 70mm;
+        font-size: 1rem;
+        line-height: normal;
+        transform: rotate(90deg);
+    }
+
+    li {
+        width: 150%;
+        line-height: 15px;
+        text-align: left;
+        left: 60%;
+        top: -70mm;
+    }
+
+    #circle {
+        display: none;
+    }
+
+    .cover, .titre, .direction {
+
+        display: block;
+
+    }
+
+    .titre {
+
+        font-size: 3rem;
+        text-align: left;
+        line-height: 50px;
+        text-align: left;
+        position: center;
+        margin-left: 10%;
+        color: black;
+
+    }
+
+    .citation {
+        font-family: 'Sometype Mono';
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        line-height: 22px;
+        font-size: 1rem;
+        text-indent: 0;
+        font-weight: lighter;
+    !important;
+
+    }
+
+    .link {
+        color: #000000;
+    }
+
+    .vinietefigcaption {
+        display: block;
+    }
+
+    gallery {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #couverture {
+        display: block;
+    }
+
+    a {
+
+        color: black;
+    }
+    em {
+        color: black;
+    }
+}

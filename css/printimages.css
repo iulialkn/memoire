@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'SometypeMono';
+    src: url('../fonts/SometypeMono-Regular.otf');
+    src: url('../fonts/SometypeMono-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.figcaption {
+    /** font-family: 'SometypeMono';
+     font-size: 0.7rem;
+     color: white;
+     padding-top: 20mm;
+     padding-left: 20mm;
+     z-index: 100600;*/
+    display: none;
+}
+
+
+
+@media print {
+    @page {
+        size: A5;
+        background-color: black;
+        -webkit-print-color-adjust: exact;
+    }
+
+    figure {
+        page-break-after: always;
+
+    }
+
+    .vertical {
+        max-height: 180mm;
+        width: auto;
+
+    }
+
+    .horizontal {
+        width: auto;
+        max-height: 150mm;
+        transform: rotate(-90deg);
+
+
+    }
+
+    .figcaption {
+       /** font-family: 'SometypeMono';
+        font-size: 0.7rem;
+        color: white;
+        padding-top: 20mm;
+        padding-left: 20mm;
+        z-index: 100600;*/
+display: none;
+    }
+/**
+    figure {
+        page-break-after: always;
+        position: center;
+    }
+
+
+
+    body figure:nth-child(odd) {
+        position: relative;
+
+    }
+
+    body figure:nth-child(even) {
+         page-break-after: always;
+        position: relative;
+
+    }
+*/
+}

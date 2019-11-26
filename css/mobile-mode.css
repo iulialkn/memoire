@@ -1,0 +1,53 @@
+@media screen and (max-width: 900px) {
+    p, h1, h2, h3, h4, h5 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 600px;
+    }
+
+    #glossaire {
+        display: none;
+    }
+
+    .cover, .direction, .navbar {
+        display: none;
+    }
+
+    .titre {
+        font-size: 1.5em!important;
+        padding-bottom: unset;
+        line-height: 1em;
+    }
+
+    #text {
+        padding-top: 30px;
+        margin: auto;
+        width: 95%;
+    }
+
+    .sidenote {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px 0;
+        color: #ff1493;
+    }
+
+    .table-of-content {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        left: 0;
+        background-color: #ffffff;
+
+    }
+
+    #burger-menu {
+        visibility: visible!important;
+    }
+}
+
+#burger-menu {
+    visibility: hidden;
+}

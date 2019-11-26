@@ -1,0 +1,98 @@
+Glossaire 
+
+A
+
+API &&  abbréviation d'interface de programmation d’application. API est un ensemble de méthodes, de classes, de fonctions et de structures selon lesquelles un programme peut interagir avec un autre.
+
+Application && programme qui est destiné à éxecuter une multitude de tâches et qui est conçu pour interagir avec des utilisateurs.
+
+C
+
+Code source && texte d'un programme qui est écrit sous un des langages de programmation ou de balisage est qui est humainement lisible par un programmeur.
+
+CSS && abréviation de Cascading Style Sheets. Ce langage est utilisé  pour indiquer les couleurs, les caractères, la disposition du contenu des pages web. Il fonctionne en adéquation avec HTML pour la création de page web.
+
+CSS print &&  ensemble des règles CSS pour l'impression.
+
+D
+
+DOM && interface de programmation qui permet à des programmes et à des scripts d'éxecuter le contenu des pages web. Il est possible de modifier sa structure et sa forme.
+
+Données && représentation formelle d'une information dans un programme adapté à la transmission, à la communication et au traitement. Elle peut représenter le texte ou le code source d'un programme.
+
+E
+
+Epub && acronyme de publication électronique. C'est un format ouvert pour les livres numériques avec l'éxtension .epub. Ce format permet de créer et de diffuser les publications numériques.
+
+F
+
+Format && est façon de représenter des données. L'identifiant de format est indiqué à la fin du nom d'un fichier sous forme d'une extention comme par exemple .pdf.
+
+
+Free Software Fondation  && (FSF) organisation américaine fondée par Richard Stallman, programmeur du MIT, le 4 octobre 1985. Les objectifs de cette organisation sont de protéger les droits des utilisateurs de programmes informatiques en stimulant l’apparition des logiciels libres.
+
+H
+
+Hacker && un terme emprunté à l'anglais et qui signifie "pirate informatique". Un hacker est une personne qui a beaucoup de connaissances en informatique et qui peut exploiter les fails des logiciels, des sites web, etc. De plus, hacker peut signifier la personne fortement passionnée dans le codage.
+
+HTML (HyperText Markup Language) && représente le langage standardisé de balisage de documents dans le web. Ce langage est la base de la programmation d’un site web. Le texte de HTML est interprété par le Navigateur web pour obtenir un texte formaté sur un écran d’ordinateur ou un autre appareil. Les fonctionnalités du langage HTML sont limitées, c’est pour cela qu’il est actuellement utilisé en synergie avec le langage CSS.
+
+J
+
+JavaScript && un langage de programmation qui permet de créer un contenu dynamique qui gère le multimédia et qui anime des images. Ainsi, l’utilisation de JavaScript consiste en une modification dynamique de HTML et CSS.
+
+L
+Langage de balisage &&  séquence des symboles dans un texte qui transmet des information sur la structure de ce texte. Ce sont le texte en soi, les titres, les sous-titres, les listes, le texte souligné. De plus, le langage de balisage permet d’avoir des documents interactifs si la mise en page l’exige. Les langages TeX, HTML, Markdown sont par exemples des langages de balisage.
+
+Langage de programmation && langage formel consacré à la création par l'écriture des programmes informatiques. Nous utilisons les langages de programmation pour écrire des logiciels, application etc. Les langages indiquent les règles au à suivre aux ordinateurs et comment organiser la gestion des objets.
+
+M
+
+Markdown && langage élémentaire du balisage qui a été créé pour faire des notes et des brouillons. Il est utilisé dans les systèmes tels que GitHub et GitLab comme langage par défaut de composition de la documentation. Ce langage est souvent utilisé dans les explications pour les outils mais nous pouvons tout de même produire des mises en page simples avec.
+
+Mise en page && est destinée à présenter un contenu textuel avec ses images et autres données de façon équiilibrée afin de permettre la lecture facile.
+
+N
+
+Navigateur web && application informatique capable d'interpréter différents langages et de communiquer avec des serveurs.
+
+O
+
+Open source && le logiciel open source est un logiciel qui fourni le code informatique aux utilisateurs. C’est-à-dire, n’importe qui a l’accès au code source de programme pour le regarder et modifier. Ainsi, les utilisateurs de tel logiciel ont le droit (sous licence libre) de créer les nouveaux logiciels à partir de code ouvert, corriger des erreurs éventuelles et améliorer le programme. Par contre, le logiciel avec le code open source n’est pas obligé d’être gratuit bien que la plupart des outils sous licence libre soient distribués bénévolement.
+
+Open Source Initiative &&  organisation destinée à l’avancement des programmes libres. OSI a été créé par Bruce Perens et Eric Steven Raymond.
+
+P
+
+PDF && (Portable Document Format) un format des documents électroniques. Ce format est destiné à représenter la version électronique d’un fichier à imprimer. PDF permet l’intégration des caractères, des images vectorielles ou matricielles et des fichiers multimédias. De plus, le format peut supporter RGB, CMYK, Grayscale, Lab, Duotone, Bitmap.
+
+PHP  && (Hypertext Preprocessor) langage open source de script HTML. Ce langage a été spécialement élaboré pour les script de serveur web. L’un des avantages de PHP est la possibilité de créer des pages web dynamiques. Avec PHP les utilisateurs obtiennent la capacité de créer des applications web de qualité rapidement et simplement. De plus, c’est assez simple de les modifier et de les supporter après la réalisation.
+
+Page web && document accessible à l'aide d'un navigateur web. Une page web type représente un document textuel ou non sous HTML ou autres langages, et qui permet de transmettre une multitude d'information.
+
+
+Python && langage de programmation qui est utilisé généralement dans le développement des applications et des serveur web. Ce langage dispose de multiples bibliothèques aux possibilités différentes intéressantes non seulement pour les développeurs de programmes mais pour aussi les designers. Un des buts de python est de contribuer à la simplification de la progammation. Ce langage support le travail avec Java.
+
+
+S
+Serveur web && un serveur web est un serveur informatique qui répond à des requêtes du World Wide Web, en utilisant principalement le protocole HTTP. Il y répond par des pages web.
+
+Site web && un ensemble de pages web.
+
+Script && un script désigne un programme chargé d'exécuter une action.
+
+T
+
+TeX && système de balisage de documentation. Le plus souvent nous pouvons rencontrer la bibliothèque LaTeX qui est la plus grande collection de macro-commandes pour TeX. LaTeX permet d’effectuer les actions avec des commandes déjà connus grâce auxquelles le programmeur accélère son travail.
+
+
+W
+
+Web && (World Wide Web ou www) système hypertexte fonctionnant sur le réseau Internet.
+
+wiki && site web collaboratif qui permet à n'importe lequel de ses utilisateurs de modifier ses pages web. Ces sites ont principalement pour but de répandre la connaissance dans divers domaines. Il existe Wikipédia mais il en existe bien d'autres site sur des thèmes plus précis avec le même fonctionnement.
+
+
+
+
+

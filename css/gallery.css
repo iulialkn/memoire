@@ -1,0 +1,26 @@
+gallery {
+    text-align: center;
+    width: 100%;
+}
+
+gallery div {
+    width: 100%;
+}
+
+gallery div:hover {
+    /*cursor: pointer;*/
+    /*cursor: url("arrow.png"), auto;*/
+    cursor: e-resize;
+}
+
+gallery img {
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.15);
+}
+
+@media print {
+    gallery div img {
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+
+.sidenote {
+    float: left;
+    clear: left;
+    margin-left: -27%;
+    width: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    position: relative;
+    text-align: left;
+    color: #000000;
+    font-style: normal;
+    font-size: 0.7rem;
+    text-indent: 0; !important;
+    font-family:'Sometype Mono';
+
+
+}
+
+.chifre {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    font-family:'Sometype Mono';
+}
