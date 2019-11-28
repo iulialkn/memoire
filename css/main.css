@@ -695,6 +695,7 @@ body[data-template="home"] main figure:hover img, body[data-template="gallery"] 
 
 
 @media print {
+
     figure {
 
         display: none;

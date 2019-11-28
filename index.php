@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
 
+
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/note.css">
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="css/mobile-menu.css">
 
     <title>L'outil libre, pour de nouvelles pratiques éditoriales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <script>
