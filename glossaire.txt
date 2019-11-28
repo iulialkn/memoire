@@ -35,7 +35,7 @@ H
 
 Hacker && un terme emprunté à l'anglais et qui signifie "pirate informatique". Un hacker est une personne qui a beaucoup de connaissances en informatique et qui peut exploiter les fails des logiciels, des sites web, etc. De plus, hacker peut signifier la personne fortement passionnée dans le codage.
 
-HTML (HyperText Markup Language) && représente le langage standardisé de balisage de documents dans le web. Ce langage est la base de la programmation d’un site web. Le texte de HTML est interprété par le Navigateur web pour obtenir un texte formaté sur un écran d’ordinateur ou un autre appareil. Les fonctionnalités du langage HTML sont limitées, c’est pour cela qu’il est actuellement utilisé en synergie avec le langage CSS.
+HTML && (HyperText Markup Language) représente le langage standardisé de balisage de documents dans le web. Ce langage est la base de la programmation d’un site web. Le texte de HTML est interprété par le Navigateur web pour obtenir un texte formaté sur un écran d’ordinateur ou un autre appareil. Les fonctionnalités du langage HTML sont limitées, c’est pour cela qu’il est actuellement utilisé en synergie avec le langage CSS.
 
 J
 

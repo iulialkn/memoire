@@ -82,8 +82,9 @@ h4 + p, h5 + p {
 h1 {
     font-family: 'hk_groteskbold';
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #000000;
+
 }
 
 h4, h5 {

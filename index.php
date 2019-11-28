@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/mobile-mode.css">
     <link rel="stylesheet" href="css/mobile-menu.css">
 
-    <title>Libre</title>
+    <title>L'outil libre, pour de nouvelles pratiques éditoriales</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <script>
@@ -24,13 +24,13 @@
     </script>
 </head>
 <body>
-<!--- mobile shit --->
+<!--- mobile--->
 
 <div id="burger-menu">
     <img src="https://img.icons8.com/ios-filled/50/000000/menu.png">
 </div>
 
-<!--- end mobile shit --->
+<!--- end mobile--->
     <!---<button id="nightMode">Mode nuit</button>--->
 
     <div class="navbar">
@@ -41,14 +41,14 @@
 
 
 <h1 class="titre">
-    <span style="font-weight: normal; padding-left: -30px;">L'outil libre,</span><br/><em style="padding-left: 50px">pour
+    <span>L'outil libre,</span><br/><em style="padding-left: 50px">pour
         de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em></h1>
 <div class="cover">
     Iuliia Lukina<br/>
-    DNSEP option Design Graphique et Nimérique<br/>
+    DNSEP option Design Graphique et Numérique<br/>
     ESAD de Reims
 </div>
-<div class="direction">sous la direction de Rozenn Canavet</div>
+<div class="direction">sous la direction de Rozenn Canevet</div>
 
 
 
@@ -67,7 +67,9 @@
 
         echo MainText::$Bibliographie;
 
+
         // echo MainText::$Glossaire;
+
         ?>
     </div>
 
@@ -84,33 +86,16 @@
 
 </div>
 
-</div>
+
 
 
 </body>
 <script src="js/reposition.js"></script>
 <script src="js/change-structure.js"></script>
 <script src="js/create-gallery.js"></script>
-<script src="js/image-list.js"></script>
 <script src="js/mobile.js"></script>
 
 
-<script>
 
-
-    /*
-            Bindery.makeBook({
-                content: {
-                    selector: '#book',
-                    url: "book.html",
-                },
-                pageSetup: {
-                    size: { width: '21cm', height: '27cm' },
-                    margin: { top: '12pt', inner: '12pt', outer: '16pt', bottom: '20pt' },
-                },
-            });
-    */
-
-</script>
 </html>
 
