@@ -44,7 +44,7 @@
 
 
 <h1 class="titre">
-    <span>L'outil libre,</span><br/><em style="padding-left: 50px">pour
+    <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
         de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em></h1>
 <div class="cover">
     Iuliia Lukina<br/>

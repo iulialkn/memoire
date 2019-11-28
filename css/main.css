@@ -129,6 +129,7 @@ h4, h5 {
     text-indent: 0;
     color: #000000;
 !important;
+    letter-spacing: -0.4px;
 }
 
 .abstract {
@@ -271,6 +272,7 @@ a.link {
 
 .intro {
     font-family: 'Sometype Mono';
+    letter-spacing: -0.4px;
 }
 
 /*
@@ -285,6 +287,8 @@ a.link {
     font-weight: bold;
     font-family: 'Sometype Mono';
     font-weight: normal;
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
 
 
 }
@@ -358,18 +362,17 @@ figcaption {
 
 
 .vertical {
-    height: 500px;
-    width: auto;
-
+    height: auto;
+    width: 100%;
 }
 
 .horizontal {
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
 .gallery-content {
-    padding: 25px 0px;
+    padding: 25px;
 
     background-color: black;
 }
@@ -946,6 +949,7 @@ body[data-template="home"] main figure:hover img, body[data-template="gallery"] 
         text-indent: 0;
         font-weight: lighter;
     !important;
+        letter-spacing: -0.4px;
 
     }
 
