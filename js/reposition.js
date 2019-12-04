@@ -37,6 +37,9 @@ function MoveFootNotes() {
     }
 }
 
+
+
+
 function RegisterGlassaire(){
     let allClickableWords = document.getElementsByClassName("clickable");
     for(let i=0; i < allClickableWords.length; i++) {
@@ -117,6 +120,17 @@ $('#nightMode').on('click', function(){
     $('html, body').toggleClass('nuit');
 });
 
+/*
+Glossaire font changer
+ */
+
+document.getElementById("glossaire").addEventListener("mouseenter", function () {
+    this.getElementsByTagName("h1")[0].style.color = "white";
+});
+
+document.getElementById("glossaire").addEventListener("mouseleave", function () {
+    this.getElementsByTagName("h1")[0].style.color = "black";
+});
 
 
 

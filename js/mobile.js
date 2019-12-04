@@ -1,4 +1,4 @@
-
+/*
 let currentTocVisibilityStatus = true;
 document.getElementById("burger-menu").addEventListener("click", function () {
 
@@ -29,3 +29,4 @@ for(let i=0; i < allTocItems.length; i++){
     })
 }
 
+*/
