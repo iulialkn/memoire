@@ -27,13 +27,7 @@
     </script>
 </head>
 <body>
-<!--- mobile--->
 
-<div id="burger-menu">
-    <img src="https://img.icons8.com/ios-filled/50/000000/menu.png">
-</div>
-
-<!--- end mobile--->
     <!---<button id="nightMode">Mode nuit</button>--->
 
     <div class="navbar">

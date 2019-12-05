@@ -33,7 +33,7 @@
         padding: 0px 10px 0px 0;
         color: #fff;
         float: none;
-        background-color: #999;
+        background-color: blue;
     }
     .sidenote .chifre { display: none; }
 
@@ -47,11 +47,12 @@
 
     }
 
-    #burger-menu {
-        visibility: visible!important;
-    }
+
+
+
 }
 
 #burger-menu {
     visibility: hidden;
 }
+

@@ -37,9 +37,6 @@ function MoveFootNotes() {
     }
 }
 
-
-
-
 function RegisterGlassaire(){
     let allClickableWords = document.getElementsByClassName("clickable");
     for(let i=0; i < allClickableWords.length; i++) {
@@ -52,13 +49,13 @@ function RegisterGlassaire(){
                 targetGlassaireDefinition.style.color = "black";
             }, 2000);
 
-	    /*
-            document.getElementById("glossaire").scrollTo({
-                top: targetGlassaireDefinition.offsetTop-50,
-                left: 0,
-                behavior: 'smooth'
-            });
-	    */
+            /*
+                document.getElementById("glossaire").scrollTo({
+                    top: targetGlassaireDefinition.offsetTop-50,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            */
 
         })
     }
@@ -121,6 +118,73 @@ $('#nightMode').on('click', function(){
 });
 
 /*
+    menu
+ */
+
+let menu = $(".table-of-content")[0];
+menu.style.borderRight = "5px solid black";
+menu.style.left = String(15 - menu.offsetWidth)+"px";
+menu.style.height = "100%";
+
+
+let status = false;
+
+/*
+    Menu mobile desktop events
+ */
+
+menu.addEventListener("mouseenter", function () {
+
+    if(document.body.offsetWidth < 900)
+        return;
+
+    console.log("mouse over");
+
+    $(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
+});
+
+menu.addEventListener("mouseleave", function () {
+
+    if(document.body.offsetWidth < 900)
+        return;
+
+    console.log("mouse out");
+    //menu.style.left = String(15 - menu.offsetWidth)+"px";
+
+    $(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
+});
+
+window.addEventListener("resize", function () {
+    menu.style.left = String(15 - menu.offsetWidth)+"px";
+});
+
+/*
+    Menu mobile version events
+ */
+
+let menu_hidden = true;
+menu.addEventListener("click", function () {
+
+    if(document.body.offsetWidth > 900)
+        return;
+
+    console.log("mouse click");
+    //menu.style.left = "0px";
+
+    if(menu_hidden){
+        $(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
+        menu_hidden = false;
+    }
+    else{
+        $(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
+        menu_hidden = true;
+    }
+
+    status = true;
+});
+
+
+/*
 Glossaire font changer
  */
 
@@ -131,7 +195,6 @@ document.getElementById("glossaire").addEventListener("mouseenter", function () 
 document.getElementById("glossaire").addEventListener("mouseleave", function () {
     this.getElementsByTagName("h1")[0].style.color = "black";
 });
-
 
 
 
