@@ -37,30 +37,33 @@ function MoveFootNotes() {
     }
 }
 
-function RegisterGlassaire(){
+
+let mobileGlossaireShowContainer = document.getElementById("mobile-glossaire");
+mobileGlossaireShowContainer.addEventListener("click", function () {
+    this.style.display = "none";
+});
+
+function RegisterGlossaire(){
     let allClickableWords = document.getElementsByClassName("clickable");
     for(let i=0; i < allClickableWords.length; i++) {
         allClickableWords[i].addEventListener("click", function () {
-            let targetGlassaireDefinition = document.querySelectorAll(`[glassaire-target=${this.getAttribute('definition')}]`)[0];
-            jQuery('#glossaire-content').animate({scrollTop: targetGlassaireDefinition.offsetTop-50},'50');
+            let targetGlossaireDefinition = document.querySelectorAll(`[glassaire-target=${this.getAttribute('definition')}]`)[0];
+            jQuery('#glossaire-content').animate({scrollTop: targetGlossaireDefinition.offsetTop-50},'50');
 
-            targetGlassaireDefinition.style.color = "magenta";
+            targetGlossaireDefinition.style.color = "magenta";
             setTimeout(function () {
-                targetGlassaireDefinition.style.color = "black";
+                targetGlossaireDefinition.style.color = "black";
             }, 2000);
 
-            /*
-                document.getElementById("glossaire").scrollTo({
-                    top: targetGlassaireDefinition.offsetTop-50,
-                    left: 0,
-                    behavior: 'smooth'
-                });
-            */
-
+            if(document.body.offsetWidth < 900) {
+                let defContainer = document.getElementById("mobile-glossaire-content");
+                defContainer.innerHTML = targetGlossaireDefinition.innerHTML;
+                mobileGlossaireShowContainer.style.display = "block";
+            }
         })
     }
 }
-RegisterGlassaire();
+RegisterGlossaire();
 
 
 function ShowNote() {
@@ -74,10 +77,10 @@ function ShowNote() {
     }
      */
 
-    noteContainer.style.color = "#FF00B2";
+    noteContainer.style.color = "#ffffff";
 
     setTimeout(function () {
-        noteContainer.style.color = "black";
+        noteContainer.style.color = "white";
     }, 2000)
 
 }

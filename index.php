@@ -28,13 +28,13 @@
 </head>
 <body>
 
-    <!---<button id="nightMode">Mode nuit</button>--->
+<!---<button id="nightMode">Mode nuit</button>--->
 
-    <div class="navbar">
-        <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
-        <a href="https://github.com/iulialkn/memoire">Git Hub</a>
-        <a href="#" id="nightMode">Mode nuit</a>
-    </div>
+<div class="navbar">
+    <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
+    <a href="https://github.com/iulialkn/memoire">Git Hub</a>
+    <a href="#" id="nightMode">Mode nuit</a>
+</div>
 
 
 <h1 class="titre">
@@ -46,7 +46,6 @@
     ESAD de Reims
 </div>
 <div class="direction">sous la direction de Rozenn Canevet</div>
-
 
 
 <div id="content">
@@ -84,14 +83,21 @@
 </div>
 
 
+<div id="mobile-glossaire">
+    <div id="mobile-glossaire-content">
+        ololo
+    </div>
+</div>
 
 
+<!---
+
+--->
 </body>
 <script src="js/reposition.js"></script>
 <script src="js/change-structure.js"></script>
 <script src="js/create-gallery.js"></script>
 <script src="js/mobile.js"></script>
-
 
 
 </html>

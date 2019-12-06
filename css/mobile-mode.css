@@ -15,9 +15,11 @@
     }
 
     .titre {
-        font-size: 1.5em!important;
-        padding-bottom: unset;
-        line-height: 1em;
+        font-size: 2rem!important;
+
+        line-height: 2rem;
+        padding-bottom: 30%;
+        padding-top: 5%;
     }
 
     #text {
@@ -43,8 +45,19 @@
         top: 0;
         height: 100%;
         left: 0;
-        background-color: #ffffff;
+        background-color: blue;
 
+
+    }
+
+    li {
+        font-size: 1rem;
+
+    }
+    .link {
+        color: #fff;
+        float: none;
+        background-color: blue;
     }
 
 
@@ -52,7 +65,34 @@
 
 }
 
-#burger-menu {
-    visibility: hidden;
-}
 
+
+
+@media screen and (max-width: 900px) {
+    #mobile-glossaire {
+        position: fixed;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.53);
+        z-index: 100000;
+        display: none;
+    }
+
+    #mobile-glossaire-content {
+        position: absolute;
+        left:5%;
+        bottom: 0;
+
+        width: 90%;
+        background-color: blue;
+        border-radius: 15px;
+        padding: 20px 10%;
+        color: white;
+        font-family: 'Sometype Mono';
+    }
+
+
+}
