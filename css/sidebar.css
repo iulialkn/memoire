@@ -10,8 +10,11 @@
     font-family:'Sometype Mono';
     font-style: normal;
     background-color: #ffffff;
-    border-left: 1px solid; /* граница будущего градента */
-    /*border-radius: 3px;*/
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+
 }
 
 #glossaire-content {

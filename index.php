@@ -51,7 +51,7 @@
 <div id="content">
 
     <div class="table-of-content container-item">
-        <h1 style="text-transform: uppercase;">Table des matières</h1>
+        <h1 style="text-transform: uppercase; color: white">Table des matières</h1>
         <div id="toc"></div>
         <!---<div id="definition-text"></div>--->
     </div>

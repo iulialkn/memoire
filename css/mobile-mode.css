@@ -1,8 +1,8 @@
 @media screen and (max-width: 900px) {
     p, h1, h2, h3, h4, h5 {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 3px;
         max-width: 600px;
     }
 
@@ -33,7 +33,7 @@
         margin-left: 0;
         width: 100%;
         padding: 0px 10px 0px 0;
-        color: #fff;
+        color: white;
         float: none;
         background-color: blue;
     }
@@ -61,7 +61,16 @@
     }
 
 
-
+    figure img {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    gallery img {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
 
 }
 

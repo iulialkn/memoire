@@ -194,9 +194,14 @@ code {
     top: 535px;
     left: 5px;
     font-size: 0.5rem;
-    background-color: #000000;
+    background-color: white;
+    border: 1px #000000;
+    border-radius: 3px;
 }
 
+.table-of-content:hover {
+    background-color: blue;
+}
 .table-of-content li a {
     display: inline-block;
     padding: 2px 5px;
@@ -816,6 +821,8 @@ body[data-template="home"] main figure:hover img, body[data-template="gallery"] 
         text-indent: 0;
         font-weight: lighter;
     !important;
+
+
 
 
     }

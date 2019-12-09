@@ -50,7 +50,7 @@ function RegisterGlossaire(){
             let targetGlossaireDefinition = document.querySelectorAll(`[glassaire-target=${this.getAttribute('definition')}]`)[0];
             jQuery('#glossaire-content').animate({scrollTop: targetGlossaireDefinition.offsetTop-50},'50');
 
-            targetGlossaireDefinition.style.color = "magenta";
+            targetGlossaireDefinition.style.color = "blue";
             setTimeout(function () {
                 targetGlossaireDefinition.style.color = "black";
             }, 2000);
@@ -77,10 +77,10 @@ function ShowNote() {
     }
      */
 
-    noteContainer.style.color = "#ffffff";
+    noteContainer.style.color = "blue";
 
     setTimeout(function () {
-        noteContainer.style.color = "white";
+        noteContainer.style.color = "black";
     }, 2000)
 
 }
@@ -125,7 +125,7 @@ $('#nightMode').on('click', function(){
  */
 
 let menu = $(".table-of-content")[0];
-menu.style.borderRight = "5px solid black";
+menu.style.border = "1px solid black";
 menu.style.left = String(15 - menu.offsetWidth)+"px";
 menu.style.height = "100%";
 

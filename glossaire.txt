@@ -18,7 +18,7 @@ D
 
 DOM && interface de programmation qui permet à des programmes et à des scripts d'éxecuter le contenu des pages web. Il est possible de modifier sa structure et sa forme.
 
-Données && représentation formelle d'une information dans un programme adapté à la transmission, à la communication et au traitement. Elle peut représenter le texte ou le code source d'un programme.
+Donnees && représentation formelle d'une information dans un programme adapté à la transmission, à la communication et au traitement. Elle peut représenter le texte ou le code source d'un programme.
 
 E
 
