@@ -211,7 +211,7 @@ code {
 
 .table-of-content li a:hover {
     padding: 2px 10px;
-    color: blue;
+    color: #000000;
 
     font-style: italic;
 }
