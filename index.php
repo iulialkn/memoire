@@ -28,12 +28,13 @@
 </head>
 <body>
 
-<!---<button id="nightMode">Mode nuit</button>--->
+
 
 <div class="navbar">
     <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
     <a href="https://github.com/iulialkn/memoire">Git Hub</a>
     <a href="#" id="nightMode">Mode nuit</a>
+    <a href="#doBook" id="doBook">Faire un livre</a>
 </div>
 
 
@@ -63,7 +64,7 @@
 
         echo MainText::$Bibliographie;
 
-
+        echo MainText::$Book;
         // echo MainText::$Glossaire;
 
         ?>
@@ -85,7 +86,7 @@
 
 <div id="mobile-glossaire">
     <div id="mobile-glossaire-content">
-        ololo
+
     </div>
 </div>
 
@@ -99,6 +100,31 @@
 <script src="js/create-gallery.js"></script>
 <script src="js/mobile.js"></script>
 
+<script src="https://unpkg.com/bindery"></script>
+<script src="js/bindery.min.js"></script>
+
+<script>
+
+    $('#doBook').click(function(){
+        doBook();
+
+    });
+
+function doBook(){
+
+    Bindery.makeBook({
+        content: {
+            selector: '#book',
+            url: "bookbindery.html",
+
+        },
+        pageSetup: {
+            size: { width: '21cm', height: '27cm' },
+            margin: { top: '12pt', inner: '12pt', outer: '16pt', bottom: '20pt' },
+        },
+    });
+}
+</script>
 
 </html>
 

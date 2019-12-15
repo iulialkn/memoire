@@ -28,6 +28,9 @@ body {
     width: 100%;
 
 }
+#doBook{
+    cursor: pointer;
+}
 
 .direction {
     font-size: 1rem;
@@ -84,6 +87,7 @@ h1 {
     font-weight: bold;
     font-size: 1.3rem;
     color: #000000;
+
 
 }
 
@@ -284,6 +288,20 @@ a.link {
 .intro {
     font-family: 'Sometype Mono';
     letter-spacing: -0.4px;
+}
+
+.intro {
+    font-family: 'Sometype Mono';
+!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    line-height: 22px;
+    font-size: 1.1rem;
+    text-indent: 0;
+    font-weight: lighter;
+!important;
+
 }
 
 /*
@@ -674,6 +692,7 @@ body[data-template="home"] main figure:hover img, body[data-template="gallery"] 
 .couverture {
     display: none;!important;
 }
+
 
 
 @media print {
