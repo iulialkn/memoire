@@ -40,14 +40,18 @@
     .sidenote .chifre { display: none; }
 
     .table-of-content {
-        position: fixed;
+        position:fixed;
+        top:5px;
+        width:95%;
+        /*position: fixed;
         width: 100%;
         top: 0;
         height: 100%;
         left: 0;
-        background-color: blue;
-
-
+        background-color: blue;*/
+    }
+    .table-of-content.closed {
+        margin-left:-93%;
     }
 
     li {

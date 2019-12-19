@@ -37,21 +37,22 @@
     <a href="#doBook" id="doBook">Faire un livre</a>
 </div>
 
-
-<h1 class="titre">
+<div class="main-title">
+    <h1 class="titre">
     <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
-        de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em></h1>
-<div class="cover">
-    Iuliia Lukina<br/>
-    DNSEP option Design Graphique et Numérique<br/>
-    ESAD de Reims
+        de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
+    </h1>
+    <div class="cover">
+        Iuliia Lukina<br/>
+        DNSEP option Design Graphique et Numérique<br/>
+        ESAD de Reims
+    </div>
+    <div class="direction">sous la direction de Rozenn Canevet</div>
 </div>
-<div class="direction">sous la direction de Rozenn Canevet</div>
-
 
 <div id="content">
 
-    <div class="table-of-content container-item">
+    <div class="table-of-content container-item closed">
         <h1 style="text-transform: uppercase; color: white">Table des matières</h1>
         <div id="toc"></div>
         <!---<div id="definition-text"></div>--->
@@ -64,7 +65,7 @@
 
         echo MainText::$Bibliographie;
 
-        echo MainText::$Book;
+
         // echo MainText::$Glossaire;
 
         ?>
@@ -100,31 +101,69 @@
 <script src="js/create-gallery.js"></script>
 <script src="js/mobile.js"></script>
 
-<script src="https://unpkg.com/bindery"></script>
-<script src="js/bindery.min.js"></script>
+<script src="bindery.min.js"></script>
 
 <script>
 
     $('#doBook').click(function(){
         doBook();
-
     });
 
-function doBook(){
+    function doBook(){
 
-    Bindery.makeBook({
-        content: {
-            selector: '#book',
-            url: "bookbindery.html",
+        /*
+        <div class="navbar">
+        <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
+        <a href="https://github.com/iulialkn/memoire">Git Hub</a>
+        <a href="#" id="nightMode">Mode nuit</a>
+        <a href="#doBook" id="doBook">Faire un livre</a>
+    </div>
 
-        },
-        pageSetup: {
-            size: { width: '21cm', height: '27cm' },
-            margin: { top: '12pt', inner: '12pt', outer: '16pt', bottom: '20pt' },
-        },
-    });
-}
+
+    <h1 class="titre">
+        <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
+            de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em></h1>
+    <div class="cover">
+        Iuliia Lukina<br/>
+        DNSEP option Design Graphique et Numérique<br/>
+        ESAD de Reims
+    </div>
+    <div class="direction">sous la direction de Rozenn Canevet</div>
+         */
+
+
+        let textElement = document.getElementById("text");
+
+        document.getElementById("glossaire").style.display = "none";
+        document.getElementsByClassName("table-of-content")[0].style.visibility = "hidden";
+
+        let allTheShit = ["navbar", "titre", "cover", "direction"];
+        allTheShit.forEach(function (element) {
+            document.getElementsByClassName(element)[0].style.display = "none";
+        });
+
+        Bindery.makeBook({
+            content: '#text',
+            pageSetup: {
+                size: { width: '145mm', height: '210mm' },
+                margin: { top: '10mm', inner: '10mm', outer: '20mm', bottom: '25mm' },
+            },
+
+            printSetup: {
+                layout: Bindery.Layout.BOOKLET,
+                paper: Bindery.Paper.AUTO_BLEED,
+                marks: Bindery.Marks.CROP,
+                bleed: '3mm',
+            },
+
+        });
+
+
+    }
 </script>
 
 </html>
+
+
+
 

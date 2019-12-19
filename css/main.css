@@ -12,7 +12,7 @@ body {
 .titre {
     font-family: 'hk_groteskregular';
     font-size: 5rem;
-    padding-bottom: 280px;
+    padding-bottom: 80px;
 
     line-height: 70px;
     left: 18%;
@@ -24,7 +24,7 @@ body {
     margin-left: 5px;
     font-family: 'Sometype Mono';
     color: #000000;
-    margin-top: -200px;
+    margin-top: 0px;
     width: 100%;
 
 }
@@ -236,11 +236,17 @@ code {
 .clickable,
 .footnote,
 .link,
-.table-of-content li a {
+.table-of-content li a{
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     -o-transition: all 300ms;
     transition: all 300ms;
+}
+.table-of-content{
+    -webkit-transition: margin-left 300ms;
+    -moz-transition: margin-left 300ms;
+    -o-transition: margin-left 300ms;
+    transition: margin-left 300ms;
 }
 
 
@@ -455,6 +461,7 @@ p:after {
     animation-timing-function: linear;
 
 }
+
 
 /*
 
@@ -691,6 +698,16 @@ body[data-template="home"] main figure:hover img, body[data-template="gallery"] 
 
 .couverture {
     display: none;!important;
+}
+.main-title { overflow-x:hidden; overflow-scrolling: unset; }
+
+.table-of-content.closed {
+    margin-left:-16.5%;
+    border: 1px solid #000;
+}
+.table-of-content:not(.closed) {
+    /*margin-left:3px;*/
+    border: 1px solid blue;
 }
 
 

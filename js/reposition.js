@@ -125,9 +125,9 @@ $('#nightMode').on('click', function(){
  */
 
 let menu = $(".table-of-content")[0];
-menu.style.border = "1px solid black";
-menu.style.left = String(15 - menu.offsetWidth)+"px";
-menu.style.height = "100%";
+//menu.style.border = "1px solid black";
+//menu.style.left = String(15 - menu.offsetWidth)+"px";
+//menu.style.height = "100%";
 
 
 let status = false;
@@ -138,27 +138,25 @@ let status = false;
 
 menu.addEventListener("mouseenter", function () {
 
-    if(document.body.offsetWidth < 900)
-        return;
-
-    console.log("mouse over");
-
-    $(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
+    //if(document.body.offsetWidth < 900)
+     //   return;
+        console.log("mouseenter");
+        //$(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
+        $(this).removeClass("closed");
 });
 
 menu.addEventListener("mouseleave", function () {
 
-    if(document.body.offsetWidth < 900)
-        return;
-
-    console.log("mouse out");
-    //menu.style.left = String(15 - menu.offsetWidth)+"px";
-
-    $(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
+    //if(document.body.offsetWidth < 900)
+       // return;
+        console.log("mouseleave");
+        //menu.style.left = String(15 - menu.offsetWidth)+"px";
+        //$(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
+        $(this).addClass("closed");
 });
 
 window.addEventListener("resize", function () {
-    menu.style.left = String(15 - menu.offsetWidth)+"px";
+    //menu.style.left = String(15 - menu.offsetWidth)+"px";
 });
 
 /*
@@ -175,12 +173,12 @@ menu.addEventListener("click", function () {
     //menu.style.left = "0px";
 
     if(menu_hidden){
-        $(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
-        menu_hidden = false;
+        //$(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
+        //menu_hidden = false;
     }
     else{
-        $(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
-        menu_hidden = true;
+        //$(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
+        //menu_hidden = true;
     }
 
     status = true;

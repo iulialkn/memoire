@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
     let glossaire = document.getElementById("glossaire");
     let toc = document.getElementsByClassName("table-of-content")[0];
 
-    if (window.scrollY > 500) {
+    if (window.scrollY > 535) {
         glossaire.style.position = "fixed";
         glossaire.style.top = "0";
 
