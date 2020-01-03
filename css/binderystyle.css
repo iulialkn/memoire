@@ -1,0 +1,262 @@
+/* DONT SHOW IN BINDERY */
+
+.📖-viewing .main-title,
+.📖-root .navbar{
+    display: none;
+}
+
+/* SHOW IN BINDERY */
+
+
+
+.📖-root h1 {
+        left: 0;
+        top: 0mm;
+        text-indent: 0;
+
+        font-size: 14pt;
+    !important;
+    }
+
+
+.📖-root h1 {
+        display: block;
+        page-break-before: always;
+        color: #000000;
+
+    }
+
+.📖-root h1 + .h4-impression {
+
+
+    }
+.📖-flow-box {
+margin-left: var(--bindery-margin-inner);
+margin-right: var(--bindery-margin-outer);
+    position: relative;
+    margin-top: var(--bindery-margin-top);
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.📖-left .📖-flow-box {
+    margin-left: var(--bindery-margin-outer);
+    margin-right: var(--bindery-margin-inner);
+
+}
+
+.📖-right .📖-flow-box {
+    margin-left: var(--bindery-margin-outer);
+    margin-right: var(--bindery-margin-inner);
+
+}
+.📖-root .sous-titre {
+        color: #000000;
+        font-family: 'Sometype Mono';
+
+        page-break-before: always;
+        text-align: left;
+        font-size: 12pt;
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        display: block;
+        text-indent: 0;
+    }
+
+.📖-root .h4-impression {
+
+
+    }
+
+.📖-root h4, h5 {
+        margin-left: 0;
+        text-indent: 0;
+        text-align: left;
+        padding-top: 0mm;
+        font-size: 12pt;
+        color: #000000;
+    }
+.📖-root h4 + h5 {
+        padding-top: 0;
+    }
+
+
+.📖-root p {
+        /*margin: unset;*/
+        padding: unset;
+
+        line-height: 11pt;
+        color: #000000;
+    !important;
+        font-size: 10pt;
+        font-family: 'hk_groteskbold';
+
+        padding-top: 3mm;
+
+    }
+
+.📖-root .sous-titre {
+        page-break-before: always;
+    }
+
+
+.📖-root .viniete, .vinietefigcaption {
+        display: block;
+    }
+
+
+.📖-root .memoire {
+        display: none;
+    }
+
+.📖-root .truc {
+        display: none;
+    }
+
+.📖-root .intro {
+        font-family: 'Sometype Mono';
+    !important;
+        padding-top: 5mm;
+        padding-bottom: 5mm;
+        color: #000000;
+        line-height: 12px;
+        font-size: 12px;
+        text-indent: 0;
+        font-weight: lighter;
+    !important;
+
+    }
+
+.📖-root #text {
+        padding: 0;
+     text-indent: 4mm;
+        text-align: left;
+       width: 10cm;
+      /*  margin-right: 7cm; */
+        color: #000000;
+        font-weight: normal;
+
+
+    }
+
+
+.📖-root body {
+        float: none !important;
+
+    }
+
+.📖-root #glossaire {
+        display: none;
+    }
+
+
+.📖-root .chifre {
+
+        color: #000000;
+    }
+
+.📖-root .clickable {
+        color: #000000;
+
+    }
+
+.📖-root .table-of-content {
+        display: none;
+    }
+
+.📖-root .sidenote {
+        display: none;
+    }
+
+.📖-root .source {
+        display: none;
+
+    }
+
+
+.📖-root li {
+        display: none;
+    }
+
+.📖-root #circle {
+        display: none;
+    }
+
+.📖-root .cover, .titre, .direction {
+
+        display: block;
+
+    }
+
+.📖-root .titre {
+
+        font-size: 3rem;
+        text-align: left;
+        line-height: 50px;
+        text-align: left;
+        position: center;
+        margin-left: 10%;
+        color: black;
+
+    }
+
+.📖-root .citation {
+        font-family: 'Sometype Mono';
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        line-height: 22px;
+        font-size: 12px;
+        text-indent: 0;
+        font-weight: lighter;
+    !important;
+        letter-spacing: -0.4px;
+
+    }
+
+.📖-root  .link {
+        color: #000000;
+    }
+
+.📖-root  .vinietefigcaption {
+        display: none;
+    }
+
+.📖-root  gallery {
+        display: none;
+    }
+
+.📖-root  .navbar {
+        display: none;
+    }
+
+.📖-root  #couverture {
+        display: block;
+    }
+
+.📖-root a {
+
+        color: black;
+    }
+.📖-root em {
+        color: black;
+    }
+
+.📖-print-sheet-spread:first-of-type .📖-spread-wrapper,
+.📖-print-sheet-spread:nth-child(2) .📖-spread-wrapper,
+
+.📖-view-preview .📖-spread-wrapper:nth-child(1) .📖-right,
+.📖-view-preview .📖-spread-wrapper:nth-child(2) .📖-left,
+.📖-view-preview .📖-spread-wrapper:nth-last-of-type(2) .📖-right,
+.📖-view-preview .📖-spread-wrapper:nth-last-of-type(1) .📖-page,
+
+.📖-page3d:nth-of-type(1) .📖-page-background,
+.📖-page3d:nth-last-of-type(1) .📖-page-background {
+    background-color: blue;
+}
+
+.📖-print-sheet-spread:first-of-type .📖-spread-wrapper .📖-page,
+.📖-print-sheet-spread:nth-child(2) .📖-spread-wrapper .📖-page{
+    background-color: transparent;
+}

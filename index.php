@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/note.css">
     <link rel="stylesheet" href="css/vinietes.css">
     <link rel="stylesheet" href="css/main.css">
+
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/glossaire.css">
     <link rel="stylesheet" href="css/mobile-mode.css">
     <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/binderystyle.css">
 
     <title>L'outil libre, pour de nouvelles pratiques éditoriales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -137,8 +139,8 @@
         document.getElementById("glossaire").style.display = "none";
         document.getElementsByClassName("table-of-content")[0].style.visibility = "hidden";
 
-        let allTheShit = ["navbar", "titre", "cover", "direction"];
-        allTheShit.forEach(function (element) {
+        let allTheElement = ["navbar", "titre", "cover", "direction"];
+        allTheElement.forEach(function (element) {
             document.getElementsByClassName(element)[0].style.display = "none";
         });
 
@@ -155,11 +157,31 @@
                 marks: Bindery.Marks.CROP,
                 bleed: '3mm',
             },
+/*
+          let runningHeaders = Bindery.RunningHeader({
+                              render: (page) => {
+            if (page.isEmpty || page.number < 1) return '';
+            if (page.isLeft) return ${page.number} · Bindery.js ;
+        else if (page.isRight) {
+                let section = page.heading.h1 || '';
+                if (section !== '') return ${section} · ${page.number};
+            else return ${page.number};
+            },
+        },
+    }),
 
-        });
+*/
+    });
 
 
     }
+
+
+
+
+
+
+
 </script>
 
 </html>
