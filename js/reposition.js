@@ -15,6 +15,7 @@ function CreateTOC() {
     }
     TOCContainer.innerHTML += "</ul>";
 }
+
 CreateTOC();
 
 function MoveFootNotes() {
@@ -43,19 +44,19 @@ mobileGlossaireShowContainer.addEventListener("click", function () {
     this.style.display = "none";
 });
 
-function RegisterGlossaire(){
+function RegisterGlossaire() {
     let allClickableWords = document.getElementsByClassName("clickable");
-    for(let i=0; i < allClickableWords.length; i++) {
+    for (let i = 0; i < allClickableWords.length; i++) {
         allClickableWords[i].addEventListener("click", function () {
             let targetGlossaireDefinition = document.querySelectorAll(`[glassaire-target=${this.getAttribute('definition')}]`)[0];
-            jQuery('#glossaire-content').animate({scrollTop: targetGlossaireDefinition.offsetTop-50},'50');
+            jQuery('#glossaire-content').animate({scrollTop: targetGlossaireDefinition.offsetTop - 50}, '50');
 
             targetGlossaireDefinition.style.color = "blue";
             setTimeout(function () {
                 targetGlossaireDefinition.style.color = "black";
             }, 2000);
 
-            if(document.body.offsetWidth < 900) {
+            if (document.body.offsetWidth < 900) {
                 let defContainer = document.getElementById("mobile-glossaire-content");
                 defContainer.innerHTML = targetGlossaireDefinition.innerHTML;
                 mobileGlossaireShowContainer.style.display = "block";
@@ -63,6 +64,7 @@ function RegisterGlossaire(){
         })
     }
 }
+
 RegisterGlossaire();
 
 
@@ -97,7 +99,8 @@ function MakeClickable() {
 MakeClickable();
 
 let lastPosition = "bottom";
-function MoveMenu(){
+
+function MoveMenu() {
 
     let currentOffset = window.pageYOffset;
     //console.log(currentOffset)
@@ -116,7 +119,7 @@ document.getElementById("printImagesButton").addEventListener("click", function 
 });
 */
 
-$('#nightMode').on('click', function(){
+$('#nightMode').on('click', function () {
     $('html, body').toggleClass('nuit');
 });
 
@@ -138,25 +141,23 @@ let status = false;
 
 menu.addEventListener("mouseenter", function () {
 
-    //if(document.body.offsetWidth < 900)
-     //   return;
-        console.log("mouseenter");
-        //$(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
-        $(this).removeClass("closed");
+    if (document.body.offsetWidth < 900)
+        return;
+
+    console.log("mouseenter");
+    //$(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
+    $(this).removeClass("closed");
 });
 
 menu.addEventListener("mouseleave", function () {
 
-    //if(document.body.offsetWidth < 900)
-       // return;
-        console.log("mouseleave");
-        //menu.style.left = String(15 - menu.offsetWidth)+"px";
-        //$(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
-        $(this).addClass("closed");
-});
+    if (document.body.offsetWidth < 900)
+        return;
 
-window.addEventListener("resize", function () {
+    console.log("mouseleave");
     //menu.style.left = String(15 - menu.offsetWidth)+"px";
+    //$(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
+    $(this).addClass("closed");
 });
 
 /*
@@ -164,26 +165,27 @@ window.addEventListener("resize", function () {
  */
 
 let menu_hidden = true;
-menu.addEventListener("click", function () {
+let menu_old_margin_left = menu.style.marginLeft;
 
-    if(document.body.offsetWidth > 900)
-        return;
-
-    console.log("mouse click");
-    //menu.style.left = "0px";
-
-    if(menu_hidden){
-        //$(this).animate({"left": `+=${menu.offsetWidth-15}`}, "fast");
-        //menu_hidden = false;
+document.getElementById("mobile-menu-button").addEventListener("click", function () {
+    if (menu_hidden) {
+        menu.style.marginLeft = "0";
+        menu_hidden = false;
+    } else {
+        menu.style.marginLeft = menu_old_margin_left;
+        menu_hidden = true;
     }
-    else{
-        //$(this).animate({"left": `-=${menu.offsetWidth-15}`}, "fast");
-        //menu_hidden = true;
-    }
-
-    status = true;
 });
 
+let all_menu_items = document.getElementById("toc").getElementsByTagName("li");
+for (let i = 0; i < all_menu_items.length; i++) {
+    all_menu_items[i].addEventListener("click", function () {
+        if (!menu_hidden) {
+            menu.style.marginLeft = menu_old_margin_left;
+            menu_hidden = true;
+        }
+    })
+}
 
 /*
 Glossaire font changer

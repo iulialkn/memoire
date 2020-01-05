@@ -33,11 +33,18 @@
 
 
 <div class="navbar">
+    <a href="#" id="about">À propos</a>
     <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
     <a href="https://github.com/iulialkn/memoire">Git Hub</a>
     <a href="#" id="nightMode">Mode nuit</a>
     <a href="#doBook" id="doBook">Faire un livre</a>
 </div>
+
+
+<h1 class="header">
+    <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
+        de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
+</h1>
 
 <div class="main-title">
     <h1 class="titre">
@@ -93,6 +100,9 @@
     </div>
 </div>
 
+<div id="mobile-menu-button">
+
+</div>
 
 <!---
 
