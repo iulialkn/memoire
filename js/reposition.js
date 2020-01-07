@@ -119,7 +119,7 @@ document.getElementById("printImagesButton").addEventListener("click", function 
 });
 */
 
-$('#nightMode').on('click', function () {
+$('#toggle-box-checkbox').on('click', function () {
     $('html, body').toggleClass('nuit');
 });
 
@@ -129,7 +129,6 @@ $('#nightMode').on('click', function () {
 
 let menu = $(".table-of-content")[0];
 //menu.style.border = "1px solid black";
-//menu.style.left = String(15 - menu.offsetWidth)+"px";
 //menu.style.height = "100%";
 
 
@@ -164,27 +163,43 @@ menu.addEventListener("mouseleave", function () {
     Menu mobile version events
  */
 
+
 let menu_hidden = true;
-let menu_old_margin_left = menu.style.marginLeft;
+let menu_old_left_offset = String(0 - 20 - menu.offsetWidth) + "px";
 
-document.getElementById("mobile-menu-button").addEventListener("click", function () {
-    if (menu_hidden) {
-        menu.style.marginLeft = "0";
-        menu_hidden = false;
-    } else {
-        menu.style.marginLeft = menu_old_margin_left;
-        menu_hidden = true;
-    }
-});
 
-let all_menu_items = document.getElementById("toc").getElementsByTagName("li");
-for (let i = 0; i < all_menu_items.length; i++) {
-    all_menu_items[i].addEventListener("click", function () {
-        if (!menu_hidden) {
-            menu.style.marginLeft = menu_old_margin_left;
+if (document.body.offsetWidth < 900) {
+    menu.style.marginLeft = "0px";
+
+    menu.style.width = "100%";
+    menu.style.height = "100%";
+    menu.style.top = "0";
+    menu.style.left = menu_old_left_offset;
+
+
+    document.getElementById("mobile-menu-button").addEventListener("click", function () {
+
+        console.log("operate menu");
+
+        if (menu_hidden) {
+            menu.style.left = "0";
+            menu_hidden = false;
+        } else {
+            menu.style.left = menu_old_left_offset;
             menu_hidden = true;
         }
-    })
+    });
+
+    let all_menu_items = document.getElementById("toc").getElementsByTagName("li");
+    for (let i = 0; i < all_menu_items.length; i++) {
+        all_menu_items[i].addEventListener("click", function () {
+            if (!menu_hidden) {
+                menu.style.left = menu_old_left_offset;
+                menu_hidden = true;
+            }
+        })
+    }
+
 }
 
 /*
@@ -198,7 +213,5 @@ document.getElementById("glossaire").addEventListener("mouseenter", function () 
 document.getElementById("glossaire").addEventListener("mouseleave", function () {
     this.getElementsByTagName("h1")[0].style.color = "black";
 });
-
-
 
 

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/mobile-menu.css">
     <link rel="stylesheet" href="css/binderystyle.css">
 
+    <link rel="stylesheet" href="css/togglebutton.css">
+
     <title>L'outil libre, pour de nouvelles pratiques éditoriales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,14 +33,22 @@
 <body>
 
 
-
 <div class="navbar">
-    <a href="#" id="about">À propos</a>
+    <a href="#" class="pop-up-button">À propos</a>
     <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
     <a href="https://github.com/iulialkn/memoire">Git Hub</a>
-    <a href="#" id="nightMode">Mode nuit</a>
+    <!---<a href="#" id="nightMode">Mode nuit</a>--->
+
+    <div class="toggle-box">
+        <input type="checkbox" name="checkbox1" id="toggle-box-checkbox"/>
+        <label for="toggle-box-checkbox" class="toggle-box-label-left"></label>
+        <label for="toggle-box-checkbox" class="toggle-box-label"></label>
+    </div>
+
     <a href="#doBook" id="doBook">Faire un livre</a>
 </div>
+
+
 
 
 <h1 class="header">
@@ -48,8 +58,8 @@
 
 <div class="main-title">
     <h1 class="titre">
-    <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
-        de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
+        <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
+            de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
     </h1>
     <div class="cover">
         Iuliia Lukina<br/>
@@ -101,7 +111,7 @@
 </div>
 
 <div id="mobile-menu-button">
-
+    <img src="/pics/menu-button.png" width="100%" height="100%">
 </div>
 
 <!---
@@ -117,11 +127,11 @@
 
 <script>
 
-    $('#doBook').click(function(){
+    $('#doBook').click(function () {
         doBook();
     });
 
-    function doBook(){
+    function doBook() {
 
         /*
         <div class="navbar">
@@ -157,8 +167,8 @@
         Bindery.makeBook({
             content: '#text',
             pageSetup: {
-                size: { width: '145mm', height: '210mm' },
-                margin: { top: '10mm', inner: '10mm', outer: '20mm', bottom: '25mm' },
+                size: {width: '145mm', height: '210mm'},
+                margin: {top: '10mm', inner: '10mm', outer: '20mm', bottom: '25mm'},
             },
 
             printSetup: {
@@ -167,29 +177,22 @@
                 marks: Bindery.Marks.CROP,
                 bleed: '3mm',
             },
-/*
-          let runningHeaders = Bindery.RunningHeader({
-                              render: (page) => {
-            if (page.isEmpty || page.number < 1) return '';
-            if (page.isLeft) return ${page.number} · Bindery.js ;
-        else if (page.isRight) {
-                let section = page.heading.h1 || '';
-                if (section !== '') return ${section} · ${page.number};
-            else return ${page.number};
-            },
-        },
-    }),
+            /*
+                      let runningHeaders = Bindery.RunningHeader({
+                                          render: (page) => {
+                        if (page.isEmpty || page.number < 1) return '';
+                        if (page.isLeft) return ${page.number} · Bindery.js ;
+                    else if (page.isRight) {
+                            let section = page.heading.h1 || '';
+                            if (section !== '') return ${section} · ${page.number};
+                        else return ${page.number};
+                        },
+                    },
+                }),
 
-*/
-    });
-
-
+            */
+        });
     }
-
-
-
-
-
 
 
 </script>
