@@ -8,7 +8,9 @@ body {
     background-color: #ffffff;
 }
 
-
+#mobile-menu-button {
+    display: none;
+}
 .titre {
     font-family: 'hk_groteskregular';
     font-size: 5rem;
@@ -20,9 +22,9 @@ body {
 
 .header {
     font-family: 'hk_groteskregular';
-    font-size: 6rem;
+    font-size: 5rem;
 
-    line-height: 100px;
+    line-height: 80px;
     margin-left: 18%; !important;
     padding-top: 70px;
 
@@ -31,6 +33,11 @@ body {
 *::selection {
     color: #ffffff;
     background: rgb(0, 0, 255);
+}
+
+
+#couverture {
+    display: none;
 }
 .about {
     font-size: 2rem;
@@ -170,7 +177,7 @@ li {
     width: 80%;
     line-height: 14px;
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
 }
 
@@ -212,10 +219,10 @@ code {
 .table-of-content {
     z-index: 1000;
     width: 18%;
-    height: 100%;
+    height: calc(100% - 6px);
     vertical-align: top;
     padding-right: -50px;
-    position: absolute;
+    position: fixed;
     top: 535px;
     left: 5px;
     font-size: 0.5rem;
@@ -684,37 +691,6 @@ a:link {
 }
 
 
-.gallery-content {
-    background: #000000;
-}
-
-img {
-    mix-blend-mode: screen;
-    -webkit-filter: grayscale(100%) contrast(200%);
-    filter: grayscale(100%) contrast(200%);
-    opacity: 1;
-}
-
-.gallery-content:hover {
-
-    background: black;
-
-}
-
-img:hover {
-    mix-blend-mode: normal;
-    filter: none;
-    -webkit-filter: grayscale(0%);
-    opacity: 1;
-}
-
-body[data-template="home"] main figure:hover img, body[data-template="gallery"] main figure:hover img {
-    mix-blend-mode: normal;
-    filter: none;
-    -webkit-filter: grayscale(0%);
-    opacity: 1;
-}
-
 #text {
     padding-top: 160px;
 }
@@ -734,7 +710,50 @@ body[data-template="home"] main figure:hover img, body[data-template="gallery"] 
     border: 1px solid blue;
 }
 
+hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+    width: 500px;
+    position: center;
+}
 
+
+@media screen and (min-width: 900px){
+
+    .gallery-content {
+        background: #000000;
+    }
+
+    img {
+        mix-blend-mode: screen;
+        -webkit-filter: grayscale(100%) contrast(200%);
+        filter: grayscale(100%) contrast(200%);
+        opacity: 1;
+    }
+
+    .gallery-content:hover {
+
+        background: black;
+
+    }
+
+    img:hover {
+        mix-blend-mode: normal;
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        opacity: 1;
+    }
+
+    body[data-template="home"] main figure:hover img, body[data-template="gallery"] main figure:hover img {
+        mix-blend-mode: normal;
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        opacity: 1;
+    }
+
+}
 
 @media print {
 
@@ -1022,5 +1041,8 @@ body[data-template="home"] main figure:hover img, body[data-template="gallery"] 
         color: black;
     }
     .main-title { display: block}
+    #couverture {
+        display: block;
+    }
 }
 

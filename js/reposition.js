@@ -1,6 +1,5 @@
 function CreateTOC() {
     let TOCElements = document.getElementById("text").querySelectorAll("h1,h2,h3,h4");
-    //console.log(TOCElements);
 
     let TOCContainer = document.getElementById("toc");
     TOCContainer.innerHTML = "<ul>";
@@ -163,10 +162,38 @@ menu.addEventListener("mouseleave", function () {
     Menu mobile version events
  */
 
-
 let menu_hidden = true;
 let menu_old_left_offset = String(0 - 20 - menu.offsetWidth) + "px";
 
+let mobile_menu_button_img = document.getElementById("mobile-menu-button-image");
+mobile_menu_button_img.src = "/pics/menu.png";
+
+let mobile_menu_button_container = document.getElementById("mobile-menu-button");
+
+function move_menu_to_center() {
+    //mobile_menu_button_container.style.margin = "auto";
+    mobile_menu_button_container.style.bottom = "10px";
+    mobile_menu_button_container.style.right = "10px";
+
+    //mobile_menu_button_container.style.left = String(window.innerWidth - mobile_menu_button_container.clientWidth);
+}
+
+move_menu_to_center();
+
+function open_menu() {
+    menu.style.left = "0";
+    menu_hidden = false;
+
+    mobile_menu_button_img.src = "/pics/error.png";
+}
+
+function hide_menu() {
+    menu.style.left = menu_old_left_offset;
+    menu_hidden = true;
+
+    mobile_menu_button_img.src = "/pics/menu.png";
+
+}
 
 if (document.body.offsetWidth < 900) {
     menu.style.marginLeft = "0px";
@@ -182,11 +209,9 @@ if (document.body.offsetWidth < 900) {
         console.log("operate menu");
 
         if (menu_hidden) {
-            menu.style.left = "0";
-            menu_hidden = false;
+            open_menu();
         } else {
-            menu.style.left = menu_old_left_offset;
-            menu_hidden = true;
+            hide_menu();
         }
     });
 
@@ -194,8 +219,7 @@ if (document.body.offsetWidth < 900) {
     for (let i = 0; i < all_menu_items.length; i++) {
         all_menu_items[i].addEventListener("click", function () {
             if (!menu_hidden) {
-                menu.style.left = menu_old_left_offset;
-                menu_hidden = true;
+                hide_menu();
             }
         })
     }

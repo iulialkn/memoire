@@ -10,10 +10,11 @@ window.addEventListener("scroll", function () {
 
     if (window.scrollY > 535) {
         glossaire.style.position = "fixed";
-        glossaire.style.top = "0";
+        glossaire.style.top = "3px";
 
         toc.style.position = "fixed";
-        toc.style.top = "0";
+        toc.style.top = "3px";
+        toc.style.height = window.innerHeight;
     } else {
         glossaire.style.position = "absolute";
         glossaire.style.top = "535px";

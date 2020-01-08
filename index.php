@@ -50,10 +50,10 @@
 
 
 
-
 <h1 class="header">
     <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
         de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
+    <p class="citation">je m'appelle Iuliia Lukina. Ce site a été créé dans le cadre de mon DNSEP 2020, option Design Graphique et Numérique, à l'ESAD de Reims. ce site est pour moi une porte d’ouverture pour experimenter avec les outils libres en étant en même temps une publication numérique de mon mémoire portant sur ce sujet. Ce mémoire est sous la direction de Rozenn Canevet.</p>
 </h1>
 
 <div class="main-title">
@@ -69,6 +69,7 @@
     <div class="direction">sous la direction de Rozenn Canevet</div>
 </div>
 
+<hr>
 <div id="content">
 
     <div class="table-of-content container-item closed">
@@ -111,7 +112,7 @@
 </div>
 
 <div id="mobile-menu-button">
-    <img src="/pics/menu-button.png" width="100%" height="100%">
+    <img id="mobile-menu-button-image" width="100%" height="100%">
 </div>
 
 <!---

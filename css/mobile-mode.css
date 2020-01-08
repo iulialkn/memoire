@@ -11,13 +11,13 @@
     }
 
     #mobile-menu-button {
+        border-radius: 100%;
         position: fixed;
-        left: 3px;
-        top: 3px;
-        width: 50px;
         height: 50px;
+        width: 50px;
         /*background-color: blue;*/
-        z-index: 10000;
+        z-index: 1000000;
+        display: block;
     }
     .cover, .direction, .navbar {
         display: none;
@@ -64,7 +64,8 @@
     }
 
     li {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        line-height: 20px;
 
     }
     .link {
@@ -80,15 +81,17 @@
         box-shadow: none;
     }
     gallery img {
+
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
     }
+    .gallery-content {
+        background: none;
+
+    }
 
 }
-
-
-
 
 @media screen and (max-width: 900px) {
     #mobile-glossaire {
@@ -99,7 +102,7 @@
 
         top: 0;
         background-color: rgba(0, 0, 0, 0.53);
-        z-index: 100000;
+        z-index: 1000010;
         display: none;
     }
 
@@ -114,6 +117,23 @@
         padding: 20px 10%;
         color: white;
         font-family: 'Sometype Mono';
+    }
+
+    .header {
+        font-size: 3rem!important;
+        line-height: 3rem;
+        padding-bottom: 20%;
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+    .vertical {
+        height: auto;
+        width: 100%;
+    }
+
+    .horizontal {
+        width: 100%;
+        height: auto;
     }
 
 
