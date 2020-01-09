@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
     let glossaire = document.getElementById("glossaire");
     let toc = document.getElementsByClassName("table-of-content")[0];
 
-    if (window.scrollY > 535) {
+    if (window.scrollY > 800) {
         glossaire.style.position = "fixed";
         glossaire.style.top = "3px";
 
@@ -17,9 +17,9 @@ window.addEventListener("scroll", function () {
         toc.style.height = window.innerHeight;
     } else {
         glossaire.style.position = "absolute";
-        glossaire.style.top = "535px";
+        glossaire.style.top = "800px";
 
         toc.style.position = "absolute";
-        toc.style.top = "535px";
+        toc.style.top = "800px";
     }
 });

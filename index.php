@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/glossaire.css">
     <link rel="stylesheet" href="css/mobile-mode.css">
-    <link rel="stylesheet" href="css/mobile-menu.css">
-    <link rel="stylesheet" href="css/binderystyle.css">
 
     <link rel="stylesheet" href="css/togglebutton.css">
 
@@ -32,29 +30,30 @@
 </head>
 <body>
 
-
 <div class="navbar">
-    <a href="#" class="pop-up-button">À propos</a>
+    <a href="javascript:void(0)" onclick="showHide('block_id')">À propos</a>
     <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
     <a href="https://github.com/iulialkn/memoire">Git Hub</a>
-    <!---<a href="#" id="nightMode">Mode nuit</a>--->
-
+<a href="mailto:iulialkn@gmail.com">Me contacter</a>
     <div class="toggle-box">
         <input type="checkbox" name="checkbox1" id="toggle-box-checkbox"/>
         <label for="toggle-box-checkbox" class="toggle-box-label-left"></label>
         <label for="toggle-box-checkbox" class="toggle-box-label"></label>
     </div>
 
-    <a href="#doBook" id="doBook">Faire un livre</a>
+    <a href="/bindery/" target="_blank" id="doBook">Faire un livre</a>
 </div>
+<div id="block_id" style="display: none;">je m'appelle Iuliia Lukina. Ce site a été créé dans le cadre de mon DNSEP 2020, option Design
+        Graphique et Numérique, à l'ESAD de Reims. ce site est pour moi une porte d’ouverture pour experimenter avec les
+        outils libres en étant en même temps une publication numérique de mon mémoire portant sur ce sujet. Ce mémoire
+        est sous la direction de Rozenn Canevet.</div>
 
+<div class="header">
 
-
-<h1 class="header">
     <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
         de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
-    <p class="citation">je m'appelle Iuliia Lukina. Ce site a été créé dans le cadre de mon DNSEP 2020, option Design Graphique et Numérique, à l'ESAD de Reims. ce site est pour moi une porte d’ouverture pour experimenter avec les outils libres en étant en même temps une publication numérique de mon mémoire portant sur ce sujet. Ce mémoire est sous la direction de Rozenn Canevet.</p>
-</h1>
+
+</div>
 
 <div class="main-title">
     <h1 class="titre">
@@ -69,7 +68,6 @@
     <div class="direction">sous la direction de Rozenn Canevet</div>
 </div>
 
-<hr>
 <div id="content">
 
     <div class="table-of-content container-item closed">
@@ -115,46 +113,14 @@
     <img id="mobile-menu-button-image" width="100%" height="100%">
 </div>
 
-<!---
-
---->
 </body>
 <script src="js/reposition.js"></script>
 <script src="js/change-structure.js"></script>
 <script src="js/create-gallery.js"></script>
 <script src="js/mobile.js"></script>
 
-<script src="bindery.min.js"></script>
-
 <script>
-
-    $('#doBook').click(function () {
-        doBook();
-    });
-
-    function doBook() {
-
-        /*
-        <div class="navbar">
-        <a href="#ImprimerPDF" class="active" onclick="window.print()">Imprimer PDF</a>
-        <a href="https://github.com/iulialkn/memoire">Git Hub</a>
-        <a href="#" id="nightMode">Mode nuit</a>
-        <a href="#doBook" id="doBook">Faire un livre</a>
-    </div>
-
-
-    <h1 class="titre">
-        <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
-            de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em></h1>
-    <div class="cover">
-        Iuliia Lukina<br/>
-        DNSEP option Design Graphique et Numérique<br/>
-        ESAD de Reims
-    </div>
-    <div class="direction">sous la direction de Rozenn Canevet</div>
-         */
-
-
+    /*
         let textElement = document.getElementById("text");
 
         document.getElementById("glossaire").style.display = "none";
@@ -164,37 +130,7 @@
         allTheElement.forEach(function (element) {
             document.getElementsByClassName(element)[0].style.display = "none";
         });
-
-        Bindery.makeBook({
-            content: '#text',
-            pageSetup: {
-                size: {width: '145mm', height: '210mm'},
-                margin: {top: '10mm', inner: '10mm', outer: '20mm', bottom: '25mm'},
-            },
-
-            printSetup: {
-                layout: Bindery.Layout.BOOKLET,
-                paper: Bindery.Paper.AUTO_BLEED,
-                marks: Bindery.Marks.CROP,
-                bleed: '3mm',
-            },
-            /*
-                      let runningHeaders = Bindery.RunningHeader({
-                                          render: (page) => {
-                        if (page.isEmpty || page.number < 1) return '';
-                        if (page.isLeft) return ${page.number} · Bindery.js ;
-                    else if (page.isRight) {
-                            let section = page.heading.h1 || '';
-                            if (section !== '') return ${section} · ${page.number};
-                        else return ${page.number};
-                        },
-                    },
-                }),
-
-            */
-        });
-    }
-
+    */
 
 </script>
 

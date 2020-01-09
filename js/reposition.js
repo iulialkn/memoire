@@ -239,3 +239,22 @@ document.getElementById("glossaire").addEventListener("mouseleave", function () 
 });
 
 
+
+/*
+about
+ */
+function showHide() {
+    //Если элемент с id-шником element_id существует
+    if (document.getElementById('block_id')) {
+        //Записываем ссылку на элемент в переменную obj
+        var obj = document.getElementById('block_id');
+        //Если css-свойство display не block, то:
+        if (obj.style.display != "block") {
+            obj.style.display = "block"; //Показываем элемент
+        }
+        else obj.style.display = "none"; //Скрываем элемент
+    }
+    //Если элемент с id-шником element_id не найден, то выводим сообщение
+    else alert("Элемент с id: " + 'block_id' + " не найден!");
+
+}

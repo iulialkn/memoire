@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 body {
     background-color: #ffffff;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 #mobile-menu-button {
@@ -21,13 +23,27 @@ body {
 }
 
 .header {
-    font-family: 'hk_groteskregular';
-    font-size: 5rem;
+    font-family: 'hk_groteskbold';
+    font-weight: 900;
+    font-size: 7rem;
+    line-height: 110px;
+    margin-left: 100px !important;
+    margin-top: 70px;
+    padding-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 90px;
+    margin-right: 100px;
+}
 
-    line-height: 80px;
-    margin-left: 18%; !important;
-    padding-top: 70px;
-
+#block_id {
+    font-size: 1.5rem;
+    font-family: 'Sometype Mono';
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+    color: blue;
+}
 }
 
 *::selection {
@@ -39,13 +55,7 @@ body {
 #couverture {
     display: none;
 }
-.about {
-    font-size: 2rem;
-    font-family: 'Sometype Mono';
-    margin-left: 20px;
-    margin-top: 30px;
 
-}
 .cover {
     font-size: 1rem;
     margin-left: 5px;
@@ -53,7 +63,6 @@ body {
     color: #000000;
     margin-top: 0px;
     width: 100%;
-
 }
 #doBook{
     cursor: pointer;
@@ -223,7 +232,7 @@ code {
     vertical-align: top;
     padding-right: -50px;
     position: fixed;
-    top: 535px;
+    top: 800px;
     left: 5px;
     font-size: 0.5rem;
     background-color: white;
@@ -692,7 +701,7 @@ a:link {
 
 
 #text {
-    padding-top: 160px;
+    padding-top: 375px;
 }
 
 .couverture {
