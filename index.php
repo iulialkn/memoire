@@ -43,11 +43,18 @@
 
     <a href="/bindery/" target="_blank" id="doBook">Faire un livre</a>
 </div>
-<div id="block_id" style="display: none;">je m'appelle Iuliia Lukina. Ce site a été créé dans le cadre de mon DNSEP 2020, option Design
-        Graphique et Numérique, à l'ESAD de Reims. ce site est pour moi une porte d’ouverture pour experimenter avec les
+<div id="block_id" style="display: none;">Je m’appelle Iuliia Lukina. Ce site a été créé dans le cadre de mon DNSEP 2020, option Design
+        Graphique et Numérique, à l'ESAD de Reims. Ce site est pour moi une porte d’ouverture pour experimenter avec les
         outils libres en étant en même temps une publication numérique de mon mémoire portant sur ce sujet. Ce mémoire
         est sous la direction de Rozenn Canevet.</div>
 
+<div class="about-mobile">
+    <a href="javascript:void(0)" onclick="showHide2('about')">*</a>
+</div>
+<div id="about" style="display: none;">Je m’appelle Iuliia Lukina. Ce site a été créé dans le cadre de mon DNSEP 2020, option Design
+    Graphique et Numérique, à l'ESAD de Reims. Ce site est pour moi une porte d’ouverture pour experimenter avec les
+    outils libres en étant en même temps une publication numérique de mon mémoire portant sur ce sujet. Ce mémoire
+    est sous la direction de Rozenn Canevet.</div>
 <div class="header">
 
     <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour

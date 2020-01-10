@@ -258,3 +258,18 @@ function showHide() {
     else alert("Элемент с id: " + 'block_id' + " не найден!");
 
 }
+function showHide2() {
+    //Если элемент с id-шником element_id существует
+    if (document.getElementById('about')) {
+        //Записываем ссылку на элемент в переменную obj
+        var obj = document.getElementById('about');
+        //Если css-свойство display не block, то:
+        if (obj.style.display != "block") {
+            obj.style.display = "block"; //Показываем элемент
+        }
+        else obj.style.display = "none"; //Скрываем элемент
+    }
+    //Если элемент с id-шником element_id не найден, то выводим сообщение
+    else alert("Элемент с id: " + 'about' + " не найден!");
+
+}

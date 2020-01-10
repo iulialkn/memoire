@@ -25,9 +25,9 @@ body {
 .header {
     font-family: 'hk_groteskbold';
     font-weight: 900;
-    font-size: 7rem;
-    line-height: 110px;
-    margin-left: 100px !important;
+    font-size: 8rem;
+    line-height: 130px;
+    margin-left: 100px; !important;
     margin-top: 70px;
     padding-top: 40px;
     border-top: 2px solid black;
@@ -44,6 +44,12 @@ body {
     margin-top: 60px;
     color: blue;
 }
+
+.about {
+    display: none;
+}
+.about-mobile {
+    display: none;
 }
 
 *::selection {
@@ -123,8 +129,6 @@ h1 {
     font-weight: bold;
     font-size: 1.3rem;
     color: #000000;
-
-
 }
 
 h4, h5 {
@@ -183,10 +187,12 @@ ul {
 }
 
 li {
-    width: 80%;
+    width: 90%;
     line-height: 14px;
     text-align: left;
     font-size: 0.8rem;
+    margin-top: 5px;
+
 
 }
 
@@ -239,6 +245,7 @@ code {
     border: 1px #000000;
     border-radius: 3px;
     padding: 15px;
+
 }
 
 .table-of-content:hover {
@@ -766,27 +773,20 @@ hr {
 
 @media print {
 
-    figure {
-
-        display: none;
-    }
-
     html, body {
         width: 210mm;
         height: 297mm;
         margin-left: 10mm;
-
     }
 
     @page {
         size: A4;
-
     }
 
     @page :left {
         margin-top: 15mm;
         margin-right: 10mm;
-        margin-left: 30mm;
+        margin-left: 20mm;
         margin-bottom: 20mm;
     }
 
@@ -799,24 +799,12 @@ hr {
 
     h1 {
         left: 0;
-        top: 0mm;
+        top: 10mm;
         text-indent: 0;
-
         font-size: 1.3rem;
-    !important;
-    }
-
-
-    h1 {
         display: block;
         page-break-before: always;
         color: #000000;
-
-    }
-
-    h1 + .h4-impression {
-
-
     }
 
     .sous-titre {
@@ -833,10 +821,7 @@ hr {
         text-indent: 0;
     }
 
-    .h4-impression {
 
-
-    }
 
     h4, h5 {
         margin-left: 0;
@@ -899,20 +884,14 @@ hr {
     }
 
     .intro {
-        font-family: 'Sometype Mono';
-    !important;
+        font-family: 'Sometype Mono';!important;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #000000;
         line-height: 22px;
         font-size: 1.1rem;
         text-indent: 0;
-        font-weight: lighter;
-    !important;
-
-
-
-
+        font-weight: lighter;!important;
     }
 
     #text {
@@ -1039,19 +1018,17 @@ hr {
     }
 
     #couverture {
-        display: block;
-    }
+        display: block;}
 
-    a {
-
-        color: black;
-    }
-    em {
-        color: black;
-    }
+    a {color: black;}
+    em {color: black;}
     .main-title { display: block}
-    #couverture {
-        display: block;
+    #couverture {display: block;}
+    .header {
+        display: none;
+    }
+    figure {
+        display: none;
     }
 }
 

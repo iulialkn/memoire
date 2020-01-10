@@ -7,20 +7,36 @@ h1 {
     font-size: 14pt;
 !important;
     padding-left: 30%;
-    font-family: 'hk_groteskmedium_italic';
+    font-family: 'hk_grotesksemibold_italic';
+    text-decoration: black;
 
 }
 
-h4, h5 {
+h5 {
     left: 0;
     top: 0;
     text-indent: 0;
     font-size: 10pt;
 !important;
-    padding-left: 30%;
-    font-family: 'hk_groteskmedium_italic';
+    padding-left: 40%;
+
+    font-family: 'hk_grotesksemibold';
+    text-decoration: black;
 
 }
+
+h4 {
+    left: 0;
+    top: 0;
+    padding-bottom: 0mm;
+    text-indent: 0;
+    font-size: 12pt;
+    padding-left: 40%;
+    text-decoration: underline;
+    font-family: 'hk_grotesksemibold';
+    text-decoration: black;
+}
+
 
 .horizontal, .vertical {
     width: 100%;
@@ -40,6 +56,8 @@ h4, h5 {
     color: #000000;
     font-weight: bold;
     font-family: 'Sometype Mono';
+    font-size: 7pt;
+
 }
 
 .sidenote {
@@ -53,10 +71,9 @@ h4, h5 {
     vertical-align: baseline;
     position: relative;
     text-align: left;
-    color:
-            #000000;
-    font-style: normal;
-    font-size: 8pt;
+    color: #000000;
+    font-weight: 400;
+    font-size: 7pt;
     text-indent: 0;
     font-family: 'Sometype Mono';
 }
@@ -80,16 +97,18 @@ h4, h5 {
 p {
     width: 70%;
     padding-left: 30%;
-    font-size: 10pt;
+    font-size: 11pt;
+    line-height: 12pt;
     font-family: 'hk_grotesksemibold';
     font-weight: normal;
     font-style: normal;
 }
 
 .pagi {
-    font-size: 12pt;
+    font-size: 8pt;
     font-family: 'Sometype Mono';
-    left: 3mm;
+
+
 }
 
 .running {
@@ -101,14 +120,11 @@ p {
     font-family:'Sometype Mono';
     font-style: italic;
 
-    padding-top: 4mm;
-    padding-bottom: 4mm;
     color: #000000;
     line-height: 11pt;
     font-size: 10pt;
     text-indent: 0;
     font-weight: lighter;
-!important;
     letter-spacing: -0.4px;
 
 }
@@ -124,12 +140,10 @@ p {
     vertical-align: baseline;
     position: relative;
     text-align: left;
-    color: #000000;
-    font-style: normal;
-    font-size: 0.7rem;
+
     text-indent: 0; !important;
     font-family:'Sometype Mono';
-    font-style: normal;
+    font-weight: 400;
     display: block;
 }
 .viniete {
@@ -165,11 +179,77 @@ p {
     position: relative;
     text-align: left;
     color: #000000;
-    font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 8pt;
     text-indent: 0; !important;
     font-family:'Sometype Mono';
-    font-style: normal;
-    display: none;
+
+    display: block;
+    font-weight: 400;
 }
 
+#table-of-content-container {
+    font-family:'Sometype Mono';
+}
+.toc-element {
+    left: 0;
+    padding-left: 30%;
+}
+.link l-sidenote {
+    font-family:'Sometype Mono';
+
+
+    font-weight: 400;
+}
+
+.column {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    font-family:'Sometype Mono';
+
+
+}
+
+.column .def-content {
+
+    font-size: 8pt;
+    text-indent: 0;
+    font-weight: 400;
+!important;
+    text-indent: unset;
+    font-family:'Sometype Mono';
+    line-height: 9pt;
+    width: 90%;
+}
+
+.column .def-header {
+    font-weight: bold;
+    font-family: 'hk_grotesksemibold';
+    font-size: 10pt;
+    page-break-before: always;
+
+}
+.glossaire-header {
+    font-family: 'hk_grotesksemibold';
+    text-align: center;
+    font-size: 10pt;
+
+
+}
+
+.column {
+    column-count: 3;
+
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    font-family:'Sometype Mono';
+
+
+}
+.bibliographie {
+    font-family:'Sometype Mono';
+    font-size: 8pt;
+    line-height: 9pt;
+
+
+}
