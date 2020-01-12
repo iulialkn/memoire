@@ -41,6 +41,7 @@ h4 {
 .horizontal, .vertical {
     width: 100%;
     margin: 10px 0;
+    background: black;
 }
 
 .horizontal {
@@ -158,8 +159,8 @@ figcaption {
 .viniete {
     float: left;
     clear: left;
-    margin-left: -45%;
-    width: 43%;
+    margin-left: -40%;
+    width: 35%;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1;
