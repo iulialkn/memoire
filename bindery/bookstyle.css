@@ -32,7 +32,7 @@ h4 {
     text-indent: 0;
     font-size: 12pt;
     padding-left: 40%;
-    text-decoration: underline;
+    text-decoration: underline!important;
     font-family: 'hk_grotesksemibold';
     text-decoration: black;
 }
@@ -41,6 +41,10 @@ h4 {
 .horizontal, .vertical {
     width: 100%;
     margin: 10px 0;
+}
+
+.horizontal {
+
 }
 /*
 .sidenote {
@@ -63,8 +67,8 @@ h4 {
 .sidenote {
     float: left;
     clear: left;
-    margin-left: -45%;
-    width: 43%;
+    margin-left: -40%;
+    width: 35%;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1;
@@ -77,6 +81,15 @@ h4 {
     text-indent: 0;
     font-family: 'Sometype Mono';
 }
+
+.l-sidenote, .chifre {
+    font-family: 'Sometype Mono';
+    font-size: 7pt;
+}
+.l-sidenote{
+    vertical-align: super;
+}
+
 
 .link, .l-sidenote {
     padding: 0 5px;
@@ -95,17 +108,30 @@ h4 {
 }
 
 p {
-    width: 70%;
+    width: 67%;
     padding-left: 30%;
     font-size: 11pt;
-    line-height: 12pt;
+    line-height: 14pt;
     font-family: 'hk_grotesksemibold';
     font-weight: normal;
     font-style: normal;
 }
+.image-text {
+    max-width: 50mm;
+    position: center;
+    padding-left: 10%;
+}
 
-.pagi {
+figcaption {
+    text-align: center;
     font-size: 8pt;
+    font-family:'Sometype Mono';
+    width: 70%;
+    padding-left: 30%;
+
+}
+.pagi {
+    font-size: 10pt;
     font-family: 'Sometype Mono';
 
 
@@ -170,8 +196,8 @@ p {
 .vinietefigcaption {
     float: left;
     clear: left;
-    margin-left: -45%;
-    width: 43%;
+    margin-left: -40%;
+    width: 35%;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1;
@@ -179,7 +205,7 @@ p {
     position: relative;
     text-align: left;
     color: #000000;
-    font-size: 8pt;
+    font-size: 7pt;
     text-indent: 0; !important;
     font-family:'Sometype Mono';
 
@@ -253,3 +279,51 @@ p {
 
 
 }
+
+.pagi {
+    font-weight: bold;
+    text-align: left!important;
+    /*right: unset!important;*/
+    left: 25px!important;
+    right: auto!important;
+    width: 100%;
+
+}
+
+.titre {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 80mm;
+    font-size: 25pt;
+    line-height: 27pt;
+}
+
+.image-textv {
+    max-height: 70mm;
+    text-align: center;
+    padding-left: 20%;
+}
+
+
+.image-texth {
+    max-width: 70mm;
+    text-align: center;
+    padding-left: 20%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 8pt;
+    font-family:'Sometype Mono';
+
+}
+
+.first-level-toc-element {
+    left: 0;
+    padding-left: 30%;
+}
+.second-level-toc-element {
+     left: 0;
+     padding-left: 35%;
+ }

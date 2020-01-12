@@ -61,3 +61,43 @@
     top: 0;
     right: 0;
 }
+
+.prebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-family: 'hk_groteskregular';
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-top: black;
+    z-index: 300800;
+}
+
+.prebar span {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-family: 'hk_groteskregular';
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-top: black;
+    z-index: 300800;
+}
+
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #0000ff;
+}
+

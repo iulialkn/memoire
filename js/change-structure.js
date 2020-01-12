@@ -17,9 +17,9 @@ window.addEventListener("scroll", function () {
         toc.style.height = window.innerHeight;
     } else {
         glossaire.style.position = "absolute";
-        glossaire.style.top = "800px";
+        glossaire.style.top = "550px";
 
         toc.style.position = "absolute";
-        toc.style.top = "800px";
+        toc.style.top = "550px";
     }
 });

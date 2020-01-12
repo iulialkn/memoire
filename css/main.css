@@ -17,7 +17,6 @@ body {
     font-family: 'hk_groteskregular';
     font-size: 5rem;
     padding-bottom: 80px;
-
     line-height: 70px;
     left: 18%;
 }
@@ -25,14 +24,11 @@ body {
 .header {
     font-family: 'hk_groteskbold';
     font-weight: 900;
-    font-size: 8rem;
-    line-height: 130px;
-    margin-left: 100px; !important;
+    font-size: 5rem;
+    line-height: 80px;
+    margin-left: 18%; !important;
     margin-top: 70px;
     padding-top: 40px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding-bottom: 90px;
     margin-right: 100px;
 }
 
@@ -238,7 +234,7 @@ code {
     vertical-align: top;
     padding-right: -50px;
     position: fixed;
-    top: 800px;
+    top: 550px;
     left: 5px;
     font-size: 0.5rem;
     background-color: white;
@@ -686,29 +682,9 @@ a:link {
     width: 100%;
 }
 */
-/* Style the links inside the navigation bar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    font-family: 'hk_groteskregular';
-    padding: 10px 16px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    border-top: black;
-    z-index: 300800;
-}
-
-
-.navbar a:hover {
-    background-color: #ffffff;
-    color: #0000ff;
-}
-
 
 #text {
-    padding-top: 375px;
+    padding-top: 190px;
 }
 
 .couverture {
@@ -782,7 +758,9 @@ hr {
     @page {
         size: A4;
     }
-
+    .prebar {
+        display: none;
+    }
     @page :left {
         margin-top: 15mm;
         margin-right: 10mm;
