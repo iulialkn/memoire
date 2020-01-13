@@ -1,0 +1,33 @@
+
+@media print{
+
+    html, body {
+        width: 640mm;
+        height: 215mm;
+    }
+    @page {
+        width: 640mm;
+        height: 215mm;
+    }
+    * {
+        background-color: black;
+    }
+    .titre {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 80mm;
+        font-size: 25pt;
+        line-height: 27pt;
+        color: white;
+    }
+
+
+
+
+}
+
+* {
+    background-color: black;
+}
+

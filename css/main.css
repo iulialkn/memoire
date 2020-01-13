@@ -33,7 +33,7 @@ body {
 }
 
 #block_id {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Sometype Mono';
     margin-left: 100px;
     margin-right: 100px;
@@ -43,6 +43,7 @@ body {
 
 .about {
     display: none;
+
 }
 .about-mobile {
     display: none;
@@ -781,7 +782,7 @@ hr {
         text-indent: 0;
         font-size: 1.3rem;
         display: block;
-        page-break-before: always;
+        page-break-after: always;
         color: #000000;
     }
 
@@ -818,7 +819,6 @@ hr {
     p {
         /*margin: unset;*/
         padding: unset;
-
         line-height: 26px;
         color: #000000;
     !important;

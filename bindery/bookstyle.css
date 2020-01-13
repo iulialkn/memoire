@@ -39,14 +39,19 @@ h4 {
 
 
 .horizontal, .vertical {
-    width: 100%;
-    margin: 10px 0;
     background: black;
 }
 
 .horizontal {
-
+    width: 150mm;
+    height: auto;
 }
+
+.vertical {
+    height: 150mm;
+    width: auto;
+}
+
 /*
 .sidenote {
 	display: block;
@@ -176,18 +181,14 @@ figcaption {
 .viniete {
     color: #000000;
 
-
 }
-
-
-
-.viniete {
+.viniete, gallery {
     filter: hue-rotate(240deg);
     color: #000000;
 }
 
 
-.viniete {
+.viniete, .vertical, .horizontal {
     mix-blend-mode: screen;
     -webkit-filter: grayscale(100%) contrast(200%);
     filter: grayscale(100%) contrast(100%);
@@ -246,7 +247,7 @@ figcaption {
     text-indent: unset;
     font-family:'Sometype Mono';
     line-height: 9pt;
-    width: 90%;
+    width: 85%;
 }
 
 .column .def-header {
@@ -283,10 +284,9 @@ figcaption {
 
 .pagi {
     font-weight: bold;
-    text-align: left!important;
+    text-align: center!important;
     /*right: unset!important;*/
-    left: 25px!important;
-    right: auto!important;
+
     width: 100%;
 
 }
@@ -294,24 +294,13 @@ figcaption {
 .titre {
     width: 100%;
     padding-left: 0;
-    text-align: center;
-    margin-top: 80mm;
-    font-size: 25pt;
+    text-align: left;
+    margin-top: 30mm;
+    font-size: 24pt;
     line-height: 27pt;
+
 }
 
-.image-textv {
-    max-height: 70mm;
-    text-align: center;
-    padding-left: 20%;
-}
-
-
-.image-texth {
-    max-width: 70mm;
-    text-align: center;
-    padding-left: 20%;
-}
 
 figcaption {
     text-align: center;
@@ -328,3 +317,9 @@ figcaption {
      left: 0;
      padding-left: 35%;
  }
+
+.remerciement {
+    font-family:'Sometype Mono';
+    font-size: 8pt;
+    line-height: 9pt;
+}
