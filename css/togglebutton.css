@@ -32,7 +32,7 @@
     display: inline-block;
     position: relative;
     padding: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     font-size: 14px;
     line-height: 16px;
     cursor: pointer;
@@ -46,8 +46,8 @@
     z-index: 1;
     line-height: 34px;
     text-indent: 40px;
-    height: 16px;
-    width: 16px;
+    height: 12px;
+    width: 12px;
     margin: 4px;
     /*border-radius*/
     -webkit-border-radius: 100%;
@@ -62,8 +62,8 @@
 .toggle-box-label-left:after {
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 24px;
+    width: 35px;
+    height: 20px;
     /*border-radius*/
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;

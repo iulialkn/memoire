@@ -44,8 +44,8 @@ figcaption {
 
 
 .vertical {
-    height: auto;
-    width: 80%;
+    max-height: 500px;
+    width: auto;
 }
 
 .horizontal {
