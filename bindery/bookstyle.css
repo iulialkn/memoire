@@ -36,20 +36,50 @@ h4 {
     font-family: 'hk_grotesksemibold';
     text-decoration: black;
 }
+.nom {
+    width: 60%;
+    font-size: 12pt;
+    /* padding-top: 100mm; */
+    text-align: left;
+    font-family: 'hk_grotesksemibold';
+    padding-left: 30%;
+    padding-top: 10mm;
+}
+.dnsep {
+    font-family:'Sometype Mono';
+    font-size: 8pt;
+    line-height: 9pt;
+    padding-top: 120mm;
+}
+.titre {
+    width: 80%;
+    font-size: 20pt;
+    line-height: 22pt;
+    padding-top: -10;
+    text-align: left;
+    /* font-family: 'Sometype Mono'; */
+    padding-left: 30%;
+    margin-top: 0mm;
 
-
+}
 .horizontal, .vertical {
     background: black;
 }
 
 .horizontal {
-    width: 150mm;
-    height: auto;
+    width: auto;
+    height: 130mm;
+    left: 10mm;
+    right: auto;
+    z-index: 100000;
 }
 
 .vertical {
-    height: 150mm;
+    height: 130mm;
     width: auto;
+    left: 10mm;
+    right: auto;
+    z-index: 100000;
 }
 
 /*
@@ -189,7 +219,7 @@ figcaption {
 
 
 .viniete, .vertical, .horizontal {
-    mix-blend-mode: screen;
+
     -webkit-filter: grayscale(100%) contrast(200%);
     filter: grayscale(100%) contrast(100%);
     opacity: 1;
@@ -288,18 +318,8 @@ figcaption {
     /*right: unset!important;*/
 
     width: 100%;
-
 }
 
-.titre {
-    width: 100%;
-    padding-left: 0;
-    text-align: left;
-    margin-top: 30mm;
-    font-size: 24pt;
-    line-height: 27pt;
-
-}
 
 
 figcaption {
@@ -322,4 +342,14 @@ figcaption {
     font-family:'Sometype Mono';
     font-size: 8pt;
     line-height: 9pt;
+}
+
+.abstract {
+    left: 0mm;
+    margin-left: -10mm;
+    width: 115%;
+    color: black;
+    font-family: 'hk_grotesksemibold';
+    font-size: 17pt;
+    line-height: 21pt;
 }

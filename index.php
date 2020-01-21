@@ -64,22 +64,25 @@
 </div>
 <div class="header">
 
-    <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
+    <span>L’OUTIL LIBRE,</span><br/><em style="padding-left: 50px">pour
         de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
 
 </div>
 
 <div class="main-title">
+    <h1 class="titre" style="page-break-after: always">
+        <span>L’OUTIL LIBRE,</span><br/><em style="padding-left: 50px">pour
+            de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
+    </h1>
     <h1 class="titre">
-        <span>L’outil libre,</span><br/><em style="padding-left: 50px">pour
+        <span>L’OUTIL LIBRE,</span><br/><em style="padding-left: 50px">pour
             de nouvelles</em> <br/><em style="padding-left: 20px;"> pratiques éditoriales</em>
     </h1>
     <div class="cover">
-        Iuliia Lukina<br/>
-        DNSEP option Design Graphique et Numérique<br/>
-        ESAD de Reims
+        <p class="nom">Iuliia Lukina</p>
+        <p class="dnsep">DNSEP Design Graphique Numérique &bull; ESAD de Reims &bull; sous la direction de Rozenn Canevet</p>
     </div>
-    <div class="direction">sous la direction de Rozenn Canevet</div>
+
 </div>
 
 <div id="content">

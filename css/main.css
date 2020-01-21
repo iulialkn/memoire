@@ -5,7 +5,7 @@
 
 body {
     background-color: #ffffff;
-    position: absolute;
+  /*  position: absolute;*/
     top:0;
     left:0;
 }
@@ -15,9 +15,9 @@ body {
 }
 .titre {
     font-family: 'hk_groteskregular';
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 80px;
-    line-height: 70px;
+    line-height: 65px;
     left: 18%;
 }
 
@@ -83,7 +83,7 @@ body {
 
 p {
     margin: 5px 0;
-    text-indent: 2rem;
+    padding-bottom: 10px;
     text-align: left;
     font-size: 1.3rem;
     color: #000000;
@@ -93,7 +93,7 @@ p {
 }
 
 h4 + p, h5 + p {
-    text-indent: 0 rnem;
+    text-indent: 0rem;
 }
 
 
@@ -164,8 +164,7 @@ h4, h5 {
     font-family: 'Sometype Mono';
 
     font-weight: lighter;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
     line-height: 21px;
     font-size: 1.1rem;
     text-indent: 0;
@@ -450,7 +449,9 @@ p:after {
     display: none;
 }
 
-
+figcaption {
+    padding-bottom: 20px;
+}
 
 
 #container {
@@ -749,6 +750,10 @@ hr {
 */
 }
 
+.icono {
+    display: none;
+}
+
 @media print {
 
     html, body {
@@ -783,7 +788,7 @@ hr {
         text-indent: 0;
         font-size: 1.3rem;
         display: block;
-        page-break-after: always;
+        page-break-before: always;
         color: #000000;
     }
 
@@ -965,6 +970,22 @@ hr {
         color: black;
 
     }
+    .nom {
+        width: 60%;
+        font-size: 1rem;
+        /* padding-top: 100mm; */
+        text-align: left;
+        font-family: 'Sometype Mono';
+        margin-left: 10%;
+        padding-top: 10mm;
+    }
+    .dnsep {
+        font-family:'Sometype Mono';
+        font-size: 1rem;
+        line-height: 1rem;
+        padding-top: 240mm;
+        margin-left: 10%;
+    }
 
     .citation {
         font-family: 'Sometype Mono';
@@ -983,6 +1004,7 @@ hr {
     .link {
         color: #000000;
     }
+
 
     .vinietefigcaption {
         display: block;
@@ -1009,5 +1031,56 @@ hr {
     figure {
         display: none;
     }
+    .fig {
+        color: rgb(0, 0, 0);
+        user-select: none;
+        font-family: 'Sometype Mono';
+        font-size: 0.7rem;
+        font-weight: bold;
+
+    }
+    .bibliographie {
+
+        color: #000000 !important;
+
+    }
+    .icono {
+        display: block;
+        page-break-after: always;
+    }
+
+    figcaption2 {
+        text-align: center;
+        font-size: 1rem;
+        font-family:'Sometype Mono';
+
+
+    }
+
+    .gallery-content2 {
+        page-break-after: always;
+    }
+    .horizontal2 {
+        width: 130mm;
+        margin-top: 0;
+        margin-left: 0mm;
+        right: auto;
+        z-index: 100000;
+
+    }
+
+    .vertical2 {
+        height: 130mm;
+        margin-left: 0mm;
+        margin-top: 0;
+        left: 10mm;
+        right: auto;
+        z-index: 100000;
+        transform: rotate(90deg);
+    }
+    .iconographie {
+        page-break-before: always;
+    }
+
 }
 
